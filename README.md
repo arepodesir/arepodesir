@@ -1,5 +1,4 @@
-# WHOISAREPO?
+<h1 align="center">WHOISAREPO?</h1>
 
-> forge a better phaneron. 
+<h3 align="center">forge a better phaneron.</h3> 
 
-<h2 align="right">Brands</h2>
