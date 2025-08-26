@@ -1,0 +1,24 @@
+{
+  "name": "arepodesir",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Arepo Desir",
+  "author": "Arepo Desir",
+  "license": "MIT",
+  "homepage": "https://arepodesir.fyi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/desirtechnologies/arepodesir.git"
+  },
+  "scripts": {
+    "docs": "bun run docs.sh"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
