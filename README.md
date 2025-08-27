@@ -8,12 +8,12 @@
   <a href="https://desir.foundation">better</a> <a href="">phaneron.</a>
 </h3>
 
-<h1 align="left">PROJECTS</h1>
+<h1 align="left">ACTIVITY</h1>
 <table>
   <tr>
     <th>Name</th>
+    <th>Kind</th>
     <th>TL;DR</th>
-    <th>Status</th>
     <th>Repository</th>
     <th>Version</th>
   </tr>
@@ -22,7 +22,7 @@
       <p align="center">UPDOC</p>
     </td>
     <td>
-      <p align="center">What's updoc? | Code documentation CLI utility. </p>
+      <p align="center">CLI Utility</p>
     </td>
     <td>
       <p align="center">In-progress</p>
@@ -39,13 +39,13 @@
         <p align="center">VOORMAN PROBLEMS</p>
     </td>
     <td>
-        <p align="center">UPDOC</p>
+        <p align="center">Website</p>
     </td>
     <td>
-        <p align="center">UPDOC</p>
+        <p align="center">Static site for voorman.problems.</p>
     </td>
     <td>
-        <p align="center">UPDOC</p>
+        <p align="center">Done</p>
     </td>
     <td>
         <p align="center">UPDOC</p>
