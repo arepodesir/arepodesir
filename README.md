@@ -19,279 +19,87 @@
   </tr>
   <tr id="updoc">
     <td>
-      <h2 align="center">UPDOC</h2>
+      <p align="center">UPDOC</p>
     </td>
     <td>
-      <h2 align="center">What's updoc? | Code documentation CLI utility. </h2>
+      <p align="center">What's updoc? | Code documentation CLI utility. </p>
     </td>
     <td>
-      <h2 align="center">In-progress</h2>
+      <p align="center">In-progress</p>
     </td>
     <td>
-      <h2 align="center"><a href="https://github.com/desirtechnologies/updoc">@desirtechnologies</a></h2>
+      <p align="center"><a href="https://github.com/desirtechnologies/updoc">@updoc</a></p>
     </td>
     <td>
-      <h2 align="center">0.0.1</h2>
+      <p align="center">0.0.1</p>
     </td>
   </tr>
 <tr id="voorman-problems">
     <td>
-        <h2 align="center">VOORMAN PROBLEMS</h2>
+        <p align="center">VOORMAN PROBLEMS</p>
     </td>
     <td>
-        <h2 align="center">UPDOC</h2>
+        <p align="center">UPDOC</p>
     </td>
     <td>
-        <h2 align="center">UPDOC</h2>
+        <p align="center">UPDOC</p>
     </td>
     <td>
-        <h2 align="center">UPDOC</h2>
+        <p align="center">UPDOC</p>
     </td>
     <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-</tr>
-<tr id="arepodesir">
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
+        <p align="center">UPDOC</p>
     </td>
 </tr>
 <tr id="arepodesir">
     <td>
-        <h2 align="center">UPDOC</h2>
+        <p align="center">UPDOC</p>
     </td>
     <td>
-        <h2 align="center">UPDOC</h2>
+        <p align="center">UPDOC</p>
     </td>
     <td>
-        <h2 align="center">UPDOC</h2>
+        <p align="center">UPDOC</p>
     </td>
     <td>
-        <h2 align="center">UPDOC</h2>
+        <p align="center">UPDOC</p>
     </td>
     <td>
-        <h2 align="center">UPDOC</h2>
+        <p align="center">UPDOC</p>
     </td>
 </tr>
 <tr id="arepodesir">
     <td>
-        <h2 align="center">UPDOC</h2>
+        <p align="center">UPDOC</p>
     </td>
     <td>
-        <h2 align="center">UPDOC</h2>
+        <p align="center">UPDOC</p>
     </td>
     <td>
-        <h2 align="center">UPDOC</h2>
+        <p align="center">UPDOC</p>
     </td>
     <td>
-        <h2 align="center">UPDOC</h2>
+        <p align="center">UPDOC</p>
     </td>
     <td>
-        <h2 align="center">UPDOC</h2>
+        <p align="center">UPDOC</p>
+    </td>
+</tr>
+<tr id="arepodesir">
+    <td>
+        <p align="center">UPDOC</p>
+    </td>
+    <td>
+        <p align="center">UPDOC</p>
+    </td>
+    <td>
+        <p align="center">UPDOC</p>
+    </td>
+    <td>
+        <p align="center">UPDOC</p>
+    </td>
+    <td>
+        <p align="center">UPDOC</p>
     </td>
 </tr>
 </table>
-
-<h1 align="right">ORGANIZATIONS</h1>
-<table align="right">
-    <tr>
-        <th>Name</th>
-        <th>TL;DR</th>
-        <th>Status</th>
-        <th>Repository</th>
-        <th>Version</th>
-    </tr>
-    <tr id="updoc">
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-        <td>
-            <h2 align="center">What's updoc?</h2>
-        </td>
-        <td>
-            <h2 align="center">In-progress</h2>
-        </td>
-        <td>
-            <h2 align="center"><a href="https://github.com/desirtechnologies/updoc">UPDOC</a></h2>
-        </td>
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-    </tr>
-    <tr id="voorman-problems">
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-    </tr>
-    <tr id="arepodesir">
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-    </tr>
-    <tr id="arepodesir">
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-    </tr>
-    <tr id="arepodesir">
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-        <td>
-            <h2 align="center">UPDOC</h2>
-        </td>
-    </tr>
-</table>
-
-<h1 align="center">SOCIAL MEDIA</h1>
-<table>
-  <tr>
-    <th>Name</th>
-    <th>TL;DR</th>
-    <th>Status</th>
-    <th>Repository</th>
-    <th>Version</th>
-  </tr>
-  <tr id="updoc">
-    <td>
-      <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-      <h2 align="center">What's updoc? | Code documentation CLI utility. </h2>
-    </td>
-    <td>
-      <h2 align="center">In-progress</h2>
-    </td>
-    <td>
-      <h2 align="center"><a href="https://github.com/desirtechnologies/updoc">@desirtechnologies</a></h2>
-    </td>
-    <td>
-      <h2 align="center">0.0.1</h2>
-    </td>
-  </tr>
-<tr id="voorman-problems">
-    <td>
-        <h2 align="center">VOORMAN PROBLEMS</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-</tr>
-<tr id="arepodesir">
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-</tr>
-<tr id="arepodesir">
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-</tr>
-<tr id="arepodesir">
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-    <td>
-        <h2 align="center">UPDOC</h2>
-    </td>
-</tr>
-</table>   
