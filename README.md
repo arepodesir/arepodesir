@@ -1,57 +1,63 @@
-<img src="./docs/assets/banner.png" height="100%" width="100%"/><h1 align="center">
+<img src="./docs/assets/banner.png" height="100%" width="100%"/>
+<h1 align="center">
   <a href="https://whoisarepo.fyi" label="fyi">WHOISAREPO❓</a>
 </h1>
 
-<h2 align="left">I am who I am. </br>
-& who I am is what I am.</br>
-</h2>
-<h3 align="center">
-  <a href="https://desir.foundation">forge</a>
-  <a href="https://desir.foundation">a</a>
-  <a href="https://desir.foundation">better</a> <a href="">phaneron.</a>
-</h3>
+<blockquote align="center">
+<i>I am who I am </br>
+& who I am is what I am</br>
+& who I am is where I am</br>
+& who I am is when I am</br>
+& who I am is why I am.</br>
+</i></blockquote>
+<h3 align="center"><i>
+  <a href="https://desirtechnologies.pro">forge</a>
+  <a href="https://desirfoundation.space">a</a>
+  <a href="https://arepo.space">better</a> 
+  <a href="https://logos.computer">phaneron.</a>
+</i></h3>
 
-<h1 align="center">❤️MY ACTIVITIES</h1>
+<h1 align="center">❤️ACTIVITIES</h1>
 <table>
   <tr>
-    <th>Name</th>
-    <th>Kind</th>
+    <th>NAME</th>
+    <th>KIND</th>
     <th>TL;DR</th>
-    <th>Link</th>
-    <th>Date</th>
+    <th>LINK</th>
+    <th>MACH</th>
   </tr>
   <tr id="updoc">
     <td>
       <p align="left">UPDOC</p>
     </td>
     <td>
-      <p align="left">CLI Utility</p>
+      <p align="left">CLI</p>
     </td>
     <td>
-      <p align="left">In-progress</p>
+      <p align="left">README Generator</p>
     </td>
     <td>
       <p align="left"><a href="https://github.com/desirtechnologies/updoc">@updoc</a></p>
     </td>
     <td>
-      <p align="left">0.0.1</p>
+      <p align="left"><code>0.0.1@8.28.25</code></p>
     </td>
   </tr>
 <tr id="voorman-problems">
     <td>
-        <p align="left">VOORMAN PROBLEMS</p>
+        <p align="left">VOORMAN</p>
     </td>
     <td>
-        <p align="left">Website</p>
+        <p align="left">EDU</p>
     </td>
     <td>
         <p align="left">Static site for voorman.problems.</p>
     </td>
     <td>
-        <p align="left">Done</p>
+        <p align="left"><a href="https://github.com/desirtechnologies/voorman.problems">@voormanproblems</a></p>
     </td>
     <td>
-        <p align="left"><a href="https://github.com/desirtechnologies/voorman-problems">@voorman-problems</a></p>
+        <p align="left"><code>0.0.1@8.28.25</code></p>
     </td>
 </tr>
 <tr id="arepodesir">
