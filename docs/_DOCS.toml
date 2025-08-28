@@ -1,8 +1,5 @@
 [metadata]
 version = "0.0.1"
-
-
-[globals]
 basePath = "docs"
 extension = ".md"
 output = "README.md"
@@ -12,13 +9,9 @@ id = "header"
 path = "HEADER"
 
 [[section]]
-id = "social-media"
-path = "SOCIAL MEDIA"
+id = "activities"
+path = "ACTIVITIES"
 
 [[section]]
-id = "header"
-path = "HEADER"
-
-[[section]]
-id = "header"
-path = "HEADER"
+id = "footer"
+path = "FOOTER"
