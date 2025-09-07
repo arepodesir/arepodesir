@@ -3,11 +3,11 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Arepo Desir",
   "author": "Arepo Desir",
   "license": "MIT",
-  "homepage": "https://arepodesir.fyi",
+  "homepage": "https://whoisarepo.fyi",
   "repository": {
     "type": "git",
     "url": "https://github.com/desirtechnologies/arepodesir.git"

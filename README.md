@@ -3,6 +3,7 @@
   <a href="https://whoisarepo.fyi" label="fyi">WHOISAREPO❓</a>
 </h1>
 
+
 <blockquote align="center">
 <i>I am who I am </br>
 & who I am is what I am</br>
@@ -10,6 +11,13 @@
 & who I am is when I am</br>
 & who I am is why I am.</br>
 </i></blockquote>
+
+<hr/>
+
+<blockquote align="center">
+    <p><i>Programmer (n.) - One who forges programmes.</i></p>
+</blockquote>
+
 <h3 align="center"><i>
   <a href="https://desirtechnologies.pro">forge</a>
   <a href="https://desirfoundation.space">a</a>
@@ -18,7 +26,7 @@
 </i></h3>
 
 <h1 align="center">❤️ACTIVITIES</h1>
-<table>
+<table align="center">
   <tr>
     <th>NAME</th>
     <th>KIND</th>
@@ -51,7 +59,7 @@
         <p align="left">EDU</p>
     </td>
     <td>
-        <p align="left">Static site for voorman.problems.</p>
+        <p align="left">Educational website for solving programming problems.</p>
     </td>
     <td>
         <p align="left"><a href="https://github.com/desirtechnologies/voorman.problems">@voormanproblems</a></p>
@@ -77,7 +85,7 @@
         <p align="left"><a href="https://github.com/desirtechnologies/arepodesir">@arepodesir</a></p>
     </td>
 </tr>
-<tr id="arepodesir">
+<tr id="blackprint">
     <td>
         <p align="left">BLACKPRINT</p>
     </td>
@@ -88,29 +96,13 @@
         <p align="left">UPDOC</p>
     </td>
     <td>
-        <p align="left"><a href="https://github.com/desirtechnologies/arepodesir">@arepodesir</a></p>
+        <p align="left"><a href="https://github.com/desirtechnologies/blackprint">@blackprint</a></p>
     </td>
     <td>
-        <p align="left">UPDOC</p>
+        <p align="left"><code>0.0.1@8.28.25</code></p>
     </td>
 </tr>
-<tr id="arepodesir">
-    <td>
-        <p align="left">UPDOC</p>
-    </td>
-    <td>
-        <p align="left">UPDOC</p>
-    </td>
-    <td>
-        <p align="left">UPDOC</p>
-    </td>
-    <td>
-        <p align="left">UPDOC</p>
-    </td>
-    <td>
-        <p align="left"><a href="https://github.com/desirtechnologies/arepodesir">@arepodesir</a></p>
-    </td>
-</tr>
+
 </table>
 
 
@@ -147,22 +139,7 @@
     <th><img src="./docs/assets/go.svg" height="25px" width="25px"/></th>
     <th><img src="./docs/assets/java.svg" height="25px" width="25px"/></th>
 </tr>
-<tr align="center">
-    <th align="center"></th>
-    <th align="center"></th>
-    <th align="center">MORE</th>
-    <th align="center">LINKS</th>
-    <th align="center"></th>
-    <th align="center"></th>
-</tr>
-<tr>
-    <th><img src="./docs/assets/ko-fi.svg" height="25px" width="25px"/></th>
-    <th><img src="./docs/assets/nodejs.svg" height="25px" width="25px"/></th>
-    <th><img src="./docs/assets/bitcoin.svg" height="25px" width="25px"/></th>
-    <th><img src="./docs/assets/react.svg" height="25px" width="25px"/></th>
-    <th><img src="./docs/assets/twitter.svg" height="25px" width="25px"/></th>
-    <th><img src="./docs/assets/typescript.svg" height="25px" width="25px"/></th>
-</tr>
+
 <tr align="center">
     <th align="center"></th>
     <th align="center"></th>
@@ -179,4 +156,35 @@
     <th><img src="./docs/assets/javascript.svg" height="25px" width="25px"/></th>
     <th><img src="./docs/assets/facebook.svg" height="25px" width="25px"/></th>
 </tr>
+
+<tr align="center">
+    <th align="center"></th>
+    <th align="center"></th>
+    <th align="center">MORE</th>
+    <th align="center">LINKS</th>
+    <th align="center"></th>
+    <th align="center"></th>
+</tr>
+<tr>
+    <th><img src="./docs/assets/ko-fi.svg" height="25px" width="25px"/></th>
+    <th><img src="./docs/assets/nodejs.svg" height="45px" width="45px"/></th>
+    <th><img src="./docs/assets/bitcoin.svg" height="25px" width="25px"/></th>
+    <th><img src="./docs/assets/react.svg" height="25px" width="25px"/></th>
+    <th><img src="./docs/assets/twitter.svg" height="25px" width="25px"/></th>
+    <th><img src="./docs/assets/typescript.svg" height="25px" width="25px"/></th>
+</tr>
+</table>
+
+<hr/>
+
+<table align="center">
+<tr>
+<th align="center"><i>"Strive not to be a success, but rather to be of value." - Albert Einstein</i></th>
+</tr>
+
+
+<tr align="center">
+<th align="center">Made with &nbsp; <3 &nbsp; by Arepo Desir | <code> &copy; 2025 Arepo Desir</code> | <code>MACH 1.002</code></th>
+</tr>
+
 </table>
