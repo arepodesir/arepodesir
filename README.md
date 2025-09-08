@@ -160,11 +160,9 @@
 
 
 
-<h2>
-
 <table align="left">
 <tr>
-<th align="center"><i>"Strive not to be a success, but rather to be of value." - Albert Einstein</i></th>
+<th align="center"><blockquote>"Strive not to be a success, but rather to be of value." - Albert Einstein</blockquote></th>
 </tr>
 
 
@@ -172,6 +170,8 @@
 <th align="center">Made with &nbsp; <3 &nbsp; by Arepo Desir | <code> &copy; 2025 Arepo Desir</code> | <code>MACH 1.002</code></th>
 </tr>
 
-</table>
+<tr align="center">
+<th align="center"><i>Last Updated:</i> <code>2025-09-08T19:37:14-04:00</code></th>
+</tr>
 
-</h2>
+</table>
