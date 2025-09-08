@@ -5,6 +5,11 @@
 
 
 <blockquote align="center">
+    <p><i>Programmer (n.) - One who forges programmes.</i></p>
+</blockquote>
+
+
+<blockquote align="right">
 <i>I am who I am </br>
 & who I am is what I am</br>
 & who I am is where I am</br>
@@ -14,18 +19,15 @@
 
 <hr/>
 
-<blockquote align="center">
-    <p><i>Programmer (n.) - One who forges programmes.</i></p>
-</blockquote>
 
-<h3 align="center"><i>
+<h3 align="left"><i>
   <a href="https://desirtechnologies.pro">forge</a>
   <a href="https://desirfoundation.space">a</a>
   <a href="https://arepo.space">better</a> 
   <a href="https://logos.computer">phaneron.</a>
 </i></h3>
 
-<h1 align="center">❤️ACTIVITIES</h1>
+<h1 align="center">LATEST ACTIVITIES</h1>
 <table align="center">
   <tr>
     <th>NAME</th>
@@ -79,10 +81,10 @@
         <p align="left">UPDOC</p>
     </td>
     <td>
-        <p align="left">UPDOC</p>
+        <p align="left"><a href="https://github.com/desirtechnologies/arepodesir">@arepodesir</a></p>
     </td>
     <td>
-        <p align="left"><a href="https://github.com/desirtechnologies/arepodesir">@arepodesir</a></p>
+        <p align="left"><code>1.001</code></p>
     </td>
 </tr>
 <tr id="blackprint">
@@ -106,16 +108,9 @@
 </table>
 
 
-<table align="center">
-<tr align="center">
-    <th align="center"></th>
-    <th align="center"></th>
-    <th align="center">MY</th>
-    <th align="center">SOCIALS</th>
-    <th align="center"></th>
-    <th align="center"></th>
-</tr>
-<tr>
+<table align="left">
+<tr title="socials">
+<h1 align="left">SOCIALS </h1>
     <th><img src="./docs/assets/youtube.svg" height="25px" width="25px"/></th>
     <th><img src="./docs/assets/whatsapp.svg" height="25px" width="25px"/></th>
     <th><img src="./docs/assets/upwork.svg" height="25px" width="25px"/></th>
@@ -123,15 +118,11 @@
     <th><img src="./docs/assets/linkedin.svg" height="25px" width="25px"/></th>
     <th><img src="./docs/assets/kickstarter.svg" height="25px" width="25px"/></th>
 </tr>
-<tr align="center">
-    <th align="center"></th>
-    <th align="center"></th>
-    <th align="center">MY</th>
-    <th align="center">LANGUAGES</th>
-    <th align="center"></th>
-    <th align="center"></th>
-</tr>
-<tr title="try">
+</table>
+
+<table align="right">
+<tr title="languages">
+<h1 align="right">LANGUAGES </h1>
     <th><img src="./docs/assets/clojure.svg" height="25px" width="25px"/></th>
     <th><img src="./docs/assets/css3.svg" height="25px" width="25px"/></th>
     <th><img src="./docs/assets/deno.svg" height="25px" width="25px"/></th>
@@ -139,16 +130,12 @@
     <th><img src="./docs/assets/go.svg" height="25px" width="25px"/></th>
     <th><img src="./docs/assets/java.svg" height="25px" width="25px"/></th>
 </tr>
+</table>
 
-<tr align="center">
-    <th align="center"></th>
-    <th align="center"></th>
-    <th align="center">MY</th>
-    <th align="center">SKILLS</th>
-    <th align="center"></th>
-    <th align="center"></th>
-</tr>
-<tr>
+
+<table align="left">
+<tr title="skills">
+<h1 align="left">SKILLS </h1>
     <th><img src="./docs/assets/astro.svg" height="25px" width="25px"/></th>
     <th><img src="./docs/assets/bun.svg" height="25px" width="25px"/></th>
     <th><img src="./docs/assets/python.svg" height="25px" width="25px"/></th>
@@ -156,16 +143,12 @@
     <th><img src="./docs/assets/javascript.svg" height="25px" width="25px"/></th>
     <th><img src="./docs/assets/facebook.svg" height="25px" width="25px"/></th>
 </tr>
+</table>
 
-<tr align="center">
-    <th align="center"></th>
-    <th align="center"></th>
-    <th align="center">MORE</th>
-    <th align="center">LINKS</th>
-    <th align="center"></th>
-    <th align="center"></th>
-</tr>
-<tr>
+
+<table align="right">
+<tr title="links">
+<h1 align="right">LINKS </h1>
     <th><img src="./docs/assets/ko-fi.svg" height="25px" width="25px"/></th>
     <th><img src="./docs/assets/nodejs.svg" height="45px" width="45px"/></th>
     <th><img src="./docs/assets/bitcoin.svg" height="25px" width="25px"/></th>
@@ -175,9 +158,11 @@
 </tr>
 </table>
 
-<hr/>
 
-<table align="center">
+
+<h2>
+
+<table align="left">
 <tr>
 <th align="center"><i>"Strive not to be a success, but rather to be of value." - Albert Einstein</i></th>
 </tr>
@@ -188,3 +173,5 @@
 </tr>
 
 </table>
+
+</h2>
