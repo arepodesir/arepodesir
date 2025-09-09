@@ -1,0 +1,39 @@
+export const workflows = {
+    update: {
+        name: "Update",
+        on: {
+            push: {
+                branches: ["main"]
+            }
+        },
+        jobs: {
+            build: {
+                runsOn: "ubuntu-latest",
+                steps: [
+                    {
+                        uses: "actions/checkout@v4"
+                    },
+                    {
+                        uses: "bun-sh/action@v2",
+                        with: {
+                            cmd: "bunx updoc"
+                        }
+                    },
+                    {
+                        name: "Commit changes",
+                        run: `
+                            git config --global user.name "github-actions[bot]"
+                            git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                            git add README.md
+                            git commit -m "Update README"
+                        `
+                    },
+                    {
+                        name: "Push changes",
+                        uses: "ad-m/github-push-action@v4"
+                    }
+                ]
+            }
+        }
+    }
+}

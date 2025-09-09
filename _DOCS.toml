@@ -1,12 +1,13 @@
-[metadata]
+[configuration]
+plugins = ["header", "activities", "footer"]
 version = "0.0.1"
 basePath = "docs"
 extension = ".md"
 output = "README.md"
 
 [[section]]
-id = "header"
-path = "HEADER"
+name = "HEADER"
+
 
 [[section]]
 id = "activities"
