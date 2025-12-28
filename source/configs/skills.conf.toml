@@ -1,24 +1,145 @@
-  socials: [
-    { src: './docs/assets/youtube.svg', height: '25px', width: '25px' },
-    { src: './docs/assets/whatsapp.svg', height: '25px', width: '25px' },
-    { src: './docs/assets/upwork.svg', height: '25px', width: '25px' },
-    { src: './docs/assets/soundcloud.svg', height: '25px', width: '25px' },
-    { src: './docs/assets/linkedin.svg', height: '25px', width: '25px' },
-    { src: './docs/assets/kickstarter.svg', height: '25px', width: '25px' },
-  ],
-  languages: [
-    { src: './docs/assets/clojure.svg', height: '25px', width: '25px' },
-    { src: './docs/assets/css3.svg', height: '25px', width: '25px' },
-    { src: './docs/assets/deno.svg', height: '25px', width: '25px' },
-    { src: './docs/assets/discord.svg', height: '25px', width: '25px' },
-    { src: './docs/assets/go.svg', height: '25px', width: '25px' },
-    { src: './docs/assets/java.svg', height: '25px', width: '25px' },
-  ],
-  skills: [
-    { src: './docs/assets/astro.svg', height: '25px', width: '25px' },
-    { src: './docs/assets/bun.svg', height: '25px', width: '25px' },
-    { src: './docs/assets/python.svg', height: '25px', width: '25px' },
-    { src: './docs/assets/npm.svg', height: '25px', width: '25px' },
-    { src: './docs/assets/javascript.svg', height: '25px', width: '25px' },
-    { src: './docs/assets/facebook.svg', height: '25px', width: '25px' },
-  ],
+# Skills, Languages, Socials, and Links Configuration
+
+[[socials]]
+src = "./source/icons/youtube.svg"
+height = "25px"
+width = "25px"
+alt = "YouTube"
+
+[[socials]]
+src = "./source/icons/whatsapp.svg"
+height = "25px"
+width = "25px"
+alt = "WhatsApp"
+
+[[socials]]
+src = "./source/icons/upwork.svg"
+height = "25px"
+width = "25px"
+alt = "Upwork"
+
+[[socials]]
+src = "./source/icons/soundcloud.svg"
+height = "25px"
+width = "25px"
+alt = "SoundCloud"
+
+[[socials]]
+src = "./source/icons/linkedin.svg"
+height = "25px"
+width = "25px"
+alt = "LinkedIn"
+
+[[socials]]
+src = "./source/icons/kickstarter.svg"
+height = "25px"
+width = "25px"
+alt = "Kickstarter"
+
+[[languages]]
+src = "./source/icons/clojure.svg"
+height = "25px"
+width = "25px"
+alt = "Clojure"
+
+[[languages]]
+src = "./source/icons/css3.svg"
+height = "25px"
+width = "25px"
+alt = "CSS3"
+
+[[languages]]
+src = "./source/icons/deno.svg"
+height = "25px"
+width = "25px"
+alt = "Deno"
+
+[[languages]]
+src = "./source/icons/discord.svg"
+height = "25px"
+width = "25px"
+alt = "Discord"
+
+[[languages]]
+src = "./source/icons/go.svg"
+height = "25px"
+width = "25px"
+alt = "Go"
+
+[[languages]]
+src = "./source/icons/java.svg"
+height = "25px"
+width = "25px"
+alt = "Java"
+
+[[skills]]
+src = "./source/icons/astro.svg"
+height = "25px"
+width = "25px"
+alt = "Astro"
+
+[[skills]]
+src = "./source/icons/bun.svg"
+height = "25px"
+width = "25px"
+alt = "Bun"
+
+[[skills]]
+src = "./source/icons/python.svg"
+height = "25px"
+width = "25px"
+alt = "Python"
+
+[[skills]]
+src = "./source/icons/npm.svg"
+height = "25px"
+width = "25px"
+alt = "NPM"
+
+[[skills]]
+src = "./source/icons/javascript.svg"
+height = "25px"
+width = "25px"
+alt = "JavaScript"
+
+[[skills]]
+src = "./source/icons/facebook.svg"
+height = "25px"
+width = "25px"
+alt = "Facebook"
+
+[[links]]
+src = "./source/icons/ko-fi.svg"
+height = "25px"
+width = "25px"
+alt = "Ko-fi"
+
+[[links]]
+src = "./source/icons/nodejs.svg"
+height = "45px"
+width = "45px"
+alt = "Node.js"
+
+[[links]]
+src = "./source/icons/bitcoin.svg"
+height = "25px"
+width = "25px"
+alt = "Bitcoin"
+
+[[links]]
+src = "./source/icons/react.svg"
+height = "25px"
+width = "25px"
+alt = "React"
+
+[[links]]
+src = "./source/icons/twitter.svg"
+height = "25px"
+width = "25px"
+alt = "Twitter"
+
+[[links]]
+src = "./source/icons/typescript.svg"
+height = "25px"
+width = "25px"
+alt = "TypeScript"

@@ -12,14 +12,18 @@
     "type": "git",
     "url": "https://github.com/arepodesir/arepodesir.git"
   },
-  
   "scripts": {
-    "generate-readme": "bun run ./build/scripts/docs.ts"
+    "generate-readme": "bun run ./source/main/main.ts",
+    "dev": "bun run ./source/main/main.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "effect": "^3.19.13",
+    "smol-toml": "^1.6.0"
   }
 }

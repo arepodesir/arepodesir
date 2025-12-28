@@ -1,0 +1,29 @@
+# Activities (Latest Projects) Configuration
+
+[[activities]]
+name = "UPDOC"
+kind = "CLI"
+description = "README Generator"
+link = "https://github.com/desirtechnologies/updoc"
+mach = "0.0.1@8.28.25"
+
+[[activities]]
+name = "VOORMAN"
+kind = "EDU"
+description = "Educational website for solving programming problems."
+link = "https://github.com/desirtechnologies/voorman.problems"
+mach = "0.0.1@8.28.25"
+
+[[activities]]
+name = "AREPO DESIR"
+kind = "UPDOC"
+description = "UPDOC"
+link = "https://github.com/desirtechnologies/arepodesir"
+mach = "1.001"
+
+[[activities]]
+name = "BLACKPRINT"
+kind = "UPDOC"
+description = "UPDOC"
+link = "https://github.com/desirtechnologies/blackprint"
+mach = "0.0.1@8.28.25"

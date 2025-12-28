@@ -1,0 +1,25 @@
+# Header Configuration
+
+quote = """
+I am who I am
+& who I am is what I am
+& who I am is where I am
+& who I am is when I am
+& who I am is why I am.
+"""
+
+[[links]]
+label = "forge"
+url = "https://desirtechnologies.pro"
+
+[[links]]
+label = "a"
+url = "https://desirfoundation.space"
+
+[[links]]
+label = "better"
+url = "https://arepo.space"
+
+[[links]]
+label = "phaneron."
+url = "https://logos.computer"

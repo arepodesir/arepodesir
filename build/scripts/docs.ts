@@ -1,7 +1,9 @@
 #!/bin/bash bun
 
-import { DOCS } from "../../src/DOCS";
+/**
+ * Generate README script
+ * Run with: bun run generate-readme
+ */
+import { main } from "../source/main/main.js";
 
-function runDocs() {
-    const docs = DOCS();
-}
+main();
