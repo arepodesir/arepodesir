@@ -17,95 +17,19 @@
 & who I am is why I am.</br>
 </i></blockquote>
 
-<hr/>
+---
 
 
-<h3 align="left"><i>
-  <a href="https://desirtechnologies.pro">forge</a>
-  <a href="https://desirfoundation.space">a</a>
-  <a href="https://arepo.space">better</a> 
-  <a href="https://logos.computer">phaneron.</a>
-</i></h3>
+### *[forge](https://desirtechnologies.pro) [a](https://desirfoundation.space) [better](https://arepo.space) [phaneron.](https://logos.computer)*
 
 <h1 align="center">LATEST ACTIVITIES</h1>
-<table align="center">
-  <tr>
-    <th>NAME</th>
-    <th>KIND</th>
-    <th>TL;DR</th>
-    <th>LINK</th>
-    <th>MACH</th>
-  </tr>
-  <tr id="updoc">
-    <td>
-      <p align="left">UPDOC</p>
-    </td>
-    <td>
-      <p align="left">CLI</p>
-    </td>
-    <td>
-      <p align="left">README Generator</p>
-    </td>
-    <td>
-      <p align="left"><a href="https://github.com/desirtechnologies/updoc">@updoc</a></p>
-    </td>
-    <td>
-      <p align="left"><code>0.0.1@8.28.25</code></p>
-    </td>
-  </tr>
-<tr id="voorman-problems">
-    <td>
-        <p align="left">VOORMAN</p>
-    </td>
-    <td>
-        <p align="left">EDU</p>
-    </td>
-    <td>
-        <p align="left">Educational website for solving programming problems.</p>
-    </td>
-    <td>
-        <p align="left"><a href="https://github.com/desirtechnologies/voorman.problems">@voormanproblems</a></p>
-    </td>
-    <td>
-        <p align="left"><code>0.0.1@8.28.25</code></p>
-    </td>
-</tr>
-<tr id="arepodesir">
-    <td>
-        <p align="left">AREPO DESIR</p>
-    </td>
-    <td>
-        <p align="left">UPDOC</p>
-    </td>
-    <td>
-        <p align="left">UPDOC</p>
-    </td>
-    <td>
-        <p align="left"><a href="https://github.com/desirtechnologies/arepodesir">@arepodesir</a></p>
-    </td>
-    <td>
-        <p align="left"><code>1.001</code></p>
-    </td>
-</tr>
-<tr id="blackprint">
-    <td>
-        <p align="left">BLACKPRINT</p>
-    </td>
-    <td>
-        <p align="left">UPDOC</p>
-    </td>
-    <td>
-        <p align="left">UPDOC</p>
-    </td>
-    <td>
-        <p align="left"><a href="https://github.com/desirtechnologies/blackprint">@blackprint</a></p>
-    </td>
-    <td>
-        <p align="left"><code>0.0.1@8.28.25</code></p>
-    </td>
-</tr>
 
-</table>
+| NAME | KIND | TL;DR | LINK | MACH |
+| :--- | :--- | :--- | :--- | :--- |
+| UPDOC | CLI | README Generator | [@updoc](https://github.com/desirtechnologies/updoc) | `0.0.1@8.28.25` |
+| VOORMAN | EDU | Educational website for solving programming problems. | [@voormanproblems](https://github.com/desirtechnologies/voorman.problems) | `0.0.1@8.28.25` |
+| AREPO DESIR | UPDOC | UPDOC | [@arepodesir](https://github.com/desirtechnologies/arepodesir) | `1.001` |
+| BLACKPRINT | UPDOC | UPDOC | [@blackprint](https://github.com/desirtechnologies/blackprint) | `0.0.1@8.28.25` |
 
 
 <table align="left">
