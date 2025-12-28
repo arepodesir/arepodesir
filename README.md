@@ -1,4 +1,4 @@
-<img src="./docs/assets/banner.png" height="100%" width="100%"/>
+<img src="./source/icons/banner.png" height="100%" width="100%"/>
 <h1 align="center">
   <a href="https://whoisarepo.fyi" label="fyi">WHOISAREPO❓</a>
 </h1>
