@@ -1,16 +1,10 @@
-export type IBANNER = {
-    title: string;
-    url: string;
-}
-
-export function BANNER(props: IBANNER) {
-    const { title, url } = props;
-
-
-    return `
-    <img src="./docs/assets/banner.png" height="100%" width="100%"/>
+export const renderBanner = (config: BannerConfig): string => md`
+<img src="${config.imagePath}" height="100%" width="100%"/>
 <h1 align="center">
-  <a href="https://whoisarepo.fyi" label="fyi">WHOISAREPO❓</a>
+  <a href="${config.url}" label="fyi">${config.title}</a>
 </h1>
-    `
-}
+
+<blockquote align="center">
+    <p><i>${config.subtitle ?? ""}</i></p>
+</blockquote>
+`;

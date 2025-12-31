@@ -1,5 +1,3 @@
-# Header Configuration
-
 quote = """
 I am who I am
 & who I am is what I am
@@ -10,7 +8,7 @@ I am who I am
 
 [[links]]
 label = "forge"
-url = "https://desirtechnologies.pro"
+url = "https://whoisarepo.fyi"
 
 [[links]]
 label = "a"
@@ -18,7 +16,7 @@ url = "https://desirfoundation.space"
 
 [[links]]
 label = "better"
-url = "https://arepo.space"
+url = "https://whoisarepo.space"
 
 [[links]]
 label = "phaneron."

@@ -1,29 +1,28 @@
-# Activities (Latest Projects) Configuration
+[[activities]]
+name = "LOGOS"
+kind = "[OPERATING SYSTEM]"
+description = "A distributed web-operating system."
+link = "https://github.com/logos-os/logos"
+mach = "1.0001"
+updated = "2025-12-30"
 
 [[activities]]
-name = "UPDOC"
-kind = "CLI"
-description = "README Generator"
-link = "https://github.com/desirtechnologies/updoc"
-mach = "0.0.1@8.28.25"
-
-[[activities]]
-name = "VOORMAN"
+name = "LOVE-LANG"
 kind = "EDU"
-description = "Educational website for solving programming problems."
-link = "https://github.com/desirtechnologies/voorman.problems"
-mach = "0.0.1@8.28.25"
+description = "The List Oriented Virtualized Evaluator"
+link = "https://github.com/love-metalang/love-lang"
+mach = "2025-12-31"
 
 [[activities]]
-name = "AREPO DESIR"
-kind = "UPDOC"
-description = "UPDOC"
-link = "https://github.com/desirtechnologies/arepodesir"
+name = "KPAX"
+kind = "Forum"
+description = "Kindred Peace Programme"
+link = "https://github.com/desirfoundation/kpax"
 mach = "1.001"
 
 [[activities]]
-name = "BLACKPRINT"
-kind = "UPDOC"
-description = "UPDOC"
+name = "arepodesir"
+kind = "README"
+description = "This very README file & its Production Rules."
 link = "https://github.com/desirtechnologies/blackprint"
-mach = "0.0.1@8.28.25"
+mach = "2025-12-31"

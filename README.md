@@ -1,6 +1,6 @@
-<img src="./source/icons/banner.png" height="100%" width="100%"/>
+<img src="./source/images/banner.png" height="100%" width="100%"/>
 <h1 align="center">
-  <a href="https://whoisarepo.fyi" label="fyi">WHOISAREPO❓</a>
+  <a href="https://whoisarepo.space" label="fyi">WHOISAREPO❓</a>
 </h1>
 
 <blockquote align="center">
@@ -17,16 +17,16 @@
 
 ---
 
-### *[forge](https://desirtechnologies.pro) [a](https://desirfoundation.space) [better](https://arepo.space) [phaneron.](https://logos.computer)*
+### *[forge](https://whoisarepo.fyi) [a](https://desirfoundation.space) [better](https://whoisarepo.space) [phaneron.](https://logos.computer)*
 
 <h1 align="center">LATEST ACTIVITIES</h1>
 
 | NAME | KIND | TL;DR | LINK | MACH |
 | :--- | :--- | :--- | :--- | :--- |
-| UPDOC | CLI | README Generator | [@updoc](https://github.com/desirtechnologies/updoc) | `0.0.1@8.28.25` |
-| VOORMAN | EDU | Educational website for solving programming problems. | [@voorman](https://github.com/desirtechnologies/voorman.problems) | `0.0.1@8.28.25` |
-| AREPO DESIR | UPDOC | UPDOC | [@arepodesir](https://github.com/desirtechnologies/arepodesir) | `1.001` |
-| BLACKPRINT | UPDOC | UPDOC | [@blackprint](https://github.com/desirtechnologies/blackprint) | `0.0.1@8.28.25` |
+| LOGOS | [OPERATING SYSTEM] | A distributed web-operating system. | [@logos](https://github.com/logos-os/logos) | `1.0001` |
+| LOVE-LANG | EDU | The List Oriented Virtualized Evaluator | [@love-lang](https://github.com/love-metalang/love-lang) | `2025-12-31` |
+| KPAX | Forum | Kindred Peace Programme | [@kpax](https://github.com/desirfoundation/kpax) | `1.001` |
+| arepodesir | README | This very README file & its Production Rules. | [@arepodesir](https://github.com/desirtechnologies/blackprint) | `2025-12-31` |
 
 <table align="left">
 <tr title="socials">
@@ -82,11 +82,11 @@
 </tr>
 
 <tr align="center">
-<th align="center">Made with &nbsp; <3 &nbsp; by Arepo Desir | <code> © 2025 Arepo Desir</code> | <code>MACH 1.002</code></th>
+<th align="center">Made with &nbsp; <3 &nbsp; by Arepo Desir | <code> © 2025 WHOISAREPO?</code> | <code>MACH 1.0001</code></th>
 </tr>
 
 <tr align="center">
-<th align="center"><i>Last Updated:</i> <code>2025-12-28T22:42:55.097Z</code></th>
+<th align="center"><i>Last Updated:</i> <code>2025-12-31T10:59:06.231Z</code></th>
 </tr>
 
 </table>

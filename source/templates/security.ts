@@ -1,4 +1,4 @@
-import { md } from "../utils/utils";
+import { md } from "@/lib/markdown.js";
 
 export function security() {
   return md`

@@ -1,16 +1,3 @@
-/**
- * Markdown Generation Utilities
- * Pure functions for generating markdown content
- */
-import { pipe } from "effect";
-
-// =============================================================================
-// Template Literals
-// =============================================================================
-
-/**
- * Tagged template literal for markdown - trims and normalizes line endings
- */
 export const md = (
     strings: TemplateStringsArray,
     ...expressions: unknown[]
@@ -25,16 +12,8 @@ export const md = (
     return result.replace(/\r\n/g, "\n").trim();
 };
 
-/**
- * HTML template literal helper
- */
 export const html = md;
 
-// =============================================================================
-// Markdown Builders
-// =============================================================================
-
-/** Create a heading */
 export const heading = (level: 1 | 2 | 3 | 4 | 5 | 6, text: string): string =>
     `${"#".repeat(level)} ${text}`;
 
@@ -56,23 +35,17 @@ export const code = (text: string): string => `\`${text}\``;
 /** Create a horizontal rule */
 export const hr = (): string => "---";
 
-/** Create a blockquote */
 export const blockquote = (text: string): string =>
     text
         .split("\n")
         .map((line) => `> ${line}`)
         .join("\n");
 
-/** Create a line break */
+
 export const br = (): string => "\n";
 
-/** Join sections with double newlines */
 export const joinSections = (...sections: string[]): string =>
     sections.filter(Boolean).join("\n\n");
-
-// =============================================================================
-// Table Generation
-// =============================================================================
 
 export interface TableColumn {
     readonly header: string;
@@ -94,9 +67,6 @@ const alignmentChar = (align?: "left" | "center" | "right"): string => {
     }
 };
 
-/**
- * Generate a markdown table
- */
 export const table = (
     columns: readonly TableColumn[],
     rows: readonly TableRow[]
@@ -108,9 +78,6 @@ export const table = (
     return [headerRow, separatorRow, dataRows].join("\n");
 };
 
-// =============================================================================
-// HTML Helpers (for GitHub README)
-// =============================================================================
 
 export interface ImageAttrs {
     readonly src: string;
@@ -154,3 +121,12 @@ export const htmlTr = (
     const cellsHtml = cells.map((c) => `<th${alignAttr}>${c}</th>`).join("\n    ");
     return `<tr${alignAttr}>\n    ${cellsHtml}\n</tr>`;
 };
+
+
+export const Markdown = {
+    md: md, 
+    html: html,
+    htmlTable,
+
+}
+

@@ -1,8 +1,15 @@
-export function md(strings: TemplateStringsArray, ...expressions: any[]): string {
-    const result = strings.map((str, i) => {
-        const expr = expressions[i] !== undefined ? expressions[i] : '';
-        return str + expr;
-    }).join('');
+export function md(
+  strings: TemplateStringsArray,
+  ...expressions: any[]
+): string {
+  const result = strings
+    .map((str, i) => {
+      const expr = expressions[i] !== undefined ? expressions[i] : "";
+      return str + expr;
+    })
+    .join("");
 
-    return result.replace(/\r\n/g, '\n').trim();
+  return result.replace(/\r\n/g, "\n").trim();
 }
+
+export const WORKING_DIRECTORY = process.cwd();

@@ -1,25 +1,20 @@
-export type ISection<T> = {
-   content: T;
-}
+export const renderFooter = (config: FooterConfig): string => {
+  const now = new Date().toISOString();
 
-export type IFooter = ISection<{
-    year: number;
-    author: string;
-}>
+  return md`
+<table align="left">
+<tr>
+<th align="center"><blockquote>"${config.quote}" - ${config.author}</blockquote></th>
+</tr>
 
-export function Footer(props: IFooter) {
-    
-    const { year, author } = props.content;
+<tr align="center">
+<th align="center">Made with &nbsp; <3 &nbsp; by Arepo Desir | <code> ${config.copyright}</code> | <code>MACH ${config.mach}</code></th>
+</tr>
 
- return defineSection(`<footer>
-        <p>Copyright ${year} ${author}</p>
-    </footer>`)
-}
+<tr align="center">
+<th align="center"><i>Last Updated:</i> <code>${now}</code></th>
+</tr>
 
-export function defineSection(content: string) {
-    return `
-    <section>
-        ${content}
-    </section>
-    `
-}
+</table>
+`;
+};
