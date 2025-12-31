@@ -1,8 +1,8 @@
 export * from "./lib/result.js";
 export * from "./lib/markdown.js";
-export * from "./lib/config-loader.js";
+export * from "./utils/config.js";
 export * from "./types/types.js";
 export * from "./templates/sections.js";
-export * from "./services/writer.js";
+export * from "@/services/Writer";
 
-export { main } from "./main/main.js";
+export { main as PROGRAM } from "./main/main.js";

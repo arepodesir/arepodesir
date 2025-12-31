@@ -1,0 +1,10 @@
+[METADATA]
+name = "SERVICES"
+description = "Services documentation"
+version = "1.0.0"
+author = "Arepo"
+license = "MIT"
+
+[[SPEC]]
+use = "@/utils/defineService"
+strictness = "always"

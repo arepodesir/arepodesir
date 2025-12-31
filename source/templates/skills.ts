@@ -1,3 +1,5 @@
+import { md } from "@/lib/markdown";
+
 export const skills = (config: SkillsConfig): string => md`
 ${renderIconTable("SOCIALS", config.socials, "left")}
 

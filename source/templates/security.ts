@@ -1,7 +1,5 @@
 import { md } from "@/lib/markdown.js";
-
-export function security() {
-  return md`
+export const security = () => md`
     # Security Policy
 
     ## Supported Versions
@@ -23,5 +21,4 @@ export function security() {
     Tell them where to go, how often they can expect to get an update on a
     reported vulnerability, what to expect if the vulnerability is accepted or
     declined, etc.
-  `;
-}
+`

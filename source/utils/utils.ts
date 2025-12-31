@@ -1,15 +1,18 @@
-export function md(
-  strings: TemplateStringsArray,
-  ...expressions: any[]
-): string {
-  const result = strings
-    .map((str, i) => {
-      const expr = expressions[i] !== undefined ? expressions[i] : "";
-      return str + expr;
-    })
-    .join("");
-
-  return result.replace(/\r\n/g, "\n").trim();
-}
 
 export const WORKING_DIRECTORY = process.cwd();
+
+
+
+export function defineService(closure: () => any) {
+  return closure();
+}
+
+export type TemplateString = string
+export function defineTemplate(closure: () => string[]): TemplateString {
+  try {
+    return closure().join("\n");
+  } catch (error) {
+    console.error(error);
+    return "";
+  }
+}

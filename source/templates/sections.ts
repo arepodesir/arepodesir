@@ -1,29 +1,25 @@
-/**
- * Section Templates
- * Generate markdown sections from config data
- */
 import { pipe } from "effect";
 import type {
-    BannerConfig,
-    HeaderConfig,
-    FooterConfig,
-    SkillsConfig,
-    ActivityConfig,
-    IconConfig,
+  BannerConfig,
+  HeaderConfig,
+  FooterConfig,
+  SkillsConfig,
+  ActivityConfig,
+  IconConfig,
 } from "../types/types.js";
 import {
-    md,
-    html,
-    htmlImg,
-    htmlA,
-    htmlCenter,
-    htmlBlockquote,
-    table,
-    joinSections,
-    hr,
-    heading,
-    link,
-    code,
+  md,
+  html,
+  htmlImg,
+  htmlA,
+  htmlCenter,
+  htmlBlockquote,
+  table,
+  joinSections,
+  hr,
+  heading,
+  link,
+  code,
 } from "../lib/markdown.js";
 
 // =============================================================================
@@ -46,17 +42,15 @@ export const renderBanner = (config: BannerConfig): string => md`
 // =============================================================================
 
 export const renderHeader = (config: HeaderConfig): string => {
-    const quoteLines = config.quote
-        .trim()
-        .split("\n")
-        .map((line) => `${line.trim()}</br>`)
-        .join("\n");
+  const quoteLines = config.quote
+    .trim()
+    .split("\n")
+    .map((line) => `${line.trim()}</br>`)
+    .join("\n");
 
-    const linksText = config.links
-        .map((l) => `[${l.label}](${l.url})`)
-        .join(" ");
+  const linksText = config.links.map((l) => `[${l.label}](${l.url})`).join(" ");
 
-    return md`
+  return md`
 <blockquote align="right">
 <i>${quoteLines}
 </i></blockquote>
@@ -72,28 +66,28 @@ export const renderHeader = (config: HeaderConfig): string => {
 // =============================================================================
 
 export const renderActivities = (
-    activities: readonly ActivityConfig[]
+  activities: readonly ActivityConfig[],
 ): string => {
-    const tableContent = table(
-        [
-            { header: "NAME", align: "left" },
-            { header: "KIND", align: "left" },
-            { header: "TL;DR", align: "left" },
-            { header: "LINK", align: "left" },
-            { header: "MACH", align: "left" },
-        ],
-        activities.map((a) => ({
-            cells: [
-                a.name,
-                a.kind,
-                a.description,
-                `[@${a.name.toLowerCase().replace(/\s+/g, "")}](${a.link})`,
-                `\`${a.mach}\``,
-            ],
-        }))
-    );
+  const tableContent = table(
+    [
+      { header: "NAME", align: "left" },
+      { header: "KIND", align: "left" },
+      { header: "TL;DR", align: "left" },
+      { header: "LINK", align: "left" },
+      { header: "MACH", align: "left" },
+    ],
+    activities.map((a) => ({
+      cells: [
+        a.name,
+        a.kind,
+        a.description,
+        `[@${a.name.toLowerCase().replace(/\s+/g, "")}](${a.link})`,
+        `\`${a.mach}\``,
+      ],
+    })),
+  );
 
-    return md`
+  return md`
 <h1 align="center">LATEST ACTIVITIES</h1>
 
 ${tableContent}
@@ -105,12 +99,12 @@ ${tableContent}
 // =============================================================================
 
 const renderIconRow = (icons: readonly IconConfig[]): string =>
-    icons.map((icon) => `<th>${htmlImg(icon)}</th>`).join("\n    ");
+  icons.map((icon) => `<th>${htmlImg(icon)}</th>`).join("\n    ");
 
 const renderIconTable = (
-    title: string,
-    icons: readonly IconConfig[],
-    align: "left" | "right" = "left"
+  title: string,
+  icons: readonly IconConfig[],
+  align: "left" | "right" = "left",
 ): string => md`
 <table align="${align}">
 <tr title="${title.toLowerCase()}">
@@ -135,9 +129,9 @@ ${renderIconTable("LINKS", config.links, "right")}
 // =============================================================================
 
 export const renderFooter = (config: FooterConfig): string => {
-    const now = new Date().toISOString();
+  const now = new Date().toISOString();
 
-    return md`
+  return md`
 <table align="left">
 <tr>
 <th align="center"><blockquote>"${config.quote}" - ${config.author}</blockquote></th>
@@ -160,18 +154,18 @@ export const renderFooter = (config: FooterConfig): string => {
 // =============================================================================
 
 export interface ReadmeData {
-    readonly banner: BannerConfig;
-    readonly header: HeaderConfig;
-    readonly activities: readonly ActivityConfig[];
-    readonly skills: SkillsConfig;
-    readonly footer: FooterConfig;
+  readonly banner: BannerConfig;
+  readonly header: HeaderConfig;
+  readonly activities: readonly ActivityConfig[];
+  readonly skills: SkillsConfig;
+  readonly footer: FooterConfig;
 }
 
 export const renderReadme = (data: ReadmeData): string =>
-    joinSections(
-        renderBanner(data.banner),
-        renderHeader(data.header),
-        renderActivities(data.activities),
-        renderSkills(data.skills),
-        renderFooter(data.footer)
-    );
+  joinSections(
+    renderBanner(data.banner),
+    renderHeader(data.header),
+    renderActivities(data.activities),
+    renderSkills(data.skills),
+    renderFooter(data.footer),
+  );

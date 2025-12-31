@@ -23,10 +23,12 @@
 
 | NAME | KIND | TL;DR | LINK | MACH |
 | :--- | :--- | :--- | :--- | :--- |
+| arepodesir | README | This very README file & its Production Rules. | [@arepodesir](https://github.com/desirtechnologies/blackprint) | `1.001` |
 | LOGOS | [OPERATING SYSTEM] | A distributed web-operating system. | [@logos](https://github.com/logos-os/logos) | `1.0001` |
-| LOVE-LANG | EDU | The List Oriented Virtualized Evaluator | [@love-lang](https://github.com/love-metalang/love-lang) | `2025-12-31` |
+| LOVE-LANG | EDU | The List Oriented Virtualized Evaluator | [@love-lang](https://github.com/love-metalang/love-lang) | `1.001` |
 | KPAX | Forum | Kindred Peace Programme | [@kpax](https://github.com/desirfoundation/kpax) | `1.001` |
-| arepodesir | README | This very README file & its Production Rules. | [@arepodesir](https://github.com/desirtechnologies/blackprint) | `2025-12-31` |
+| drkaitwhitcomb | Portfolio Website | This very README file & its Production Rules. | [@drkaitwhitcomb](https://github.com/drkaitwhitcomb/drkaitwhitcomb) | `2.001` |
+| gideon | Portfolio Website | This very README file & its Production Rules. | [@gideon](https://github.com/drkaitwhitcomb/drkaitwhitcomb) | `2.001` |
 
 <table align="left">
 <tr title="socials">
@@ -82,11 +84,11 @@
 </tr>
 
 <tr align="center">
-<th align="center">Made with &nbsp; <3 &nbsp; by Arepo Desir | <code> © 2025 WHOISAREPO?</code> | <code>MACH 1.0001</code></th>
+<th align="center">Made with &nbsp; <3 &nbsp; by Arepo Desir | <code> WHOISAREPO?</code> | <code>MACH 1.0001</code></th>
 </tr>
 
 <tr align="center">
-<th align="center"><i>Last Updated:</i> <code>2025-12-31T10:59:06.231Z</code></th>
+<th align="center"><i>Last Updated:</i> <code>2025-12-31T20:35:49.778Z</code></th>
 </tr>
 
 </table>

@@ -1,0 +1,97 @@
+To set up custom **Rules** in Google Antigravity, you’ll typically create a file named `.antigravity/rules.toml` (or similar, depending on your specific workspace config). These rules act as "permanent memories" for your agents, ensuring they follow your specific coding standards without you having to repeat yourself.
+
+Here are several high-value rule templates in TOML-like syntax for common development scenarios:
+
+### 1. The "Architect" Rule
+
+*Best for ensuring the agent doesn't just write code, but follows your specific project structure and documentation habits.*
+
+```toml
+[rule.architecture]
+name = "System Architecture & Documentation"
+description = "Enforce project-specific folder structures and auto-doc requirements."
+
+[rule.architecture.constraints]
+enforce_layering = true
+forbidden_patterns = ["../", "node_modules/internal"]
+documentation_style = "JSDoc"
+
+[rule.architecture.actions]
+on_new_file = "Create a corresponding .test.ts file in the /tests directory immediately."
+on_refactor = "Update the internal architectural_decisions.md log with a summary of the change."
+
+```
+
+---
+
+### 2. The "Security First" Rule
+
+*Perfect for students or developers working in sensitive environments to prevent API keys or insecure patterns from leaking.*
+
+```toml
+[rule.security]
+name = "Hardened Security Guardrail"
+priority = "Critical"
+
+[rule.security.checks]
+scan_for_secrets = true
+prevent_shell_injection = true
+disallow_insecure_eval = true
+
+[rule.security.notifications]
+on_violation = "Stop the agent immediately and highlight the line in RED. Do not proceed until I approve."
+
+```
+
+---
+
+### 3. The "Vibe & Style" Rule
+
+*Use this to maintain a specific "voice" or code formatting style, especially if you prefer specific libraries (e.g., Tailwind over CSS).*
+
+```toml
+[rule.style]
+name = "Modern Frontend Preferences"
+
+[rule.style.preferences]
+ui_framework = "React"
+styling_engine = "TailwindCSS"
+typescript_strict = true
+
+[rule.style.instructions]
+css_usage = "Never create .css files. Use utility classes only. If a component gets too large, split it."
+component_pattern = "Use Functional Components with 'const' and Arrow Functions."
+
+```
+
+---
+
+### 4. The "Agentic Workflow" Rule
+
+*This tells Antigravity how much autonomy you want to give the agents.*
+
+```toml
+[rule.workflow]
+name = "Junior Dev Mode (Supervised)"
+
+[rule.workflow.autonomy]
+terminal_access = "AskEveryTime"
+browser_usage = "Allowed"
+plan_review_required = true
+
+[rule.workflow.post_task]
+run_tests = true
+verify_accessibility = true
+generate_walkthrough = "Always produce a browser recording of the final feature in action."
+
+```
+
+---
+
+### How to Apply These
+
+1. **Create the directory:** In your project root, create a folder named `.antigravity`.
+2. **Create the file:** Name it `rules.toml`.
+3. **Restart the Agent:** Toggle your Agent Manager (usually `Cmd + L` or the sidebar icon) to ensure it picks up the new constraints.
+
+**Would you like me to generate a specific "Rule" for a particular language or framework you are currently using?**

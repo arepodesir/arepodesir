@@ -14,6 +14,8 @@ export const md = (
 
 export const html = md;
 
+
+
 export const heading = (level: 1 | 2 | 3 | 4 | 5 | 6, text: string): string =>
     `${"#".repeat(level)} ${text}`;
 
@@ -124,7 +126,7 @@ export const htmlTr = (
 
 
 export const Markdown = {
-    md: md, 
+    md: md,
     html: html,
     htmlTable,
 

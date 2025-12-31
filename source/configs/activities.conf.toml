@@ -1,17 +1,23 @@
 [[activities]]
+name = "arepodesir"
+kind = "README"
+description = "This very README file & its Production Rules."
+link = "https://github.com/desirtechnologies/blackprint"
+mach = "1.001"
+
+[[activities]]
 name = "LOGOS"
 kind = "[OPERATING SYSTEM]"
 description = "A distributed web-operating system."
 link = "https://github.com/logos-os/logos"
 mach = "1.0001"
-updated = "2025-12-30"
 
 [[activities]]
 name = "LOVE-LANG"
 kind = "EDU"
 description = "The List Oriented Virtualized Evaluator"
 link = "https://github.com/love-metalang/love-lang"
-mach = "2025-12-31"
+mach = "1.001"
 
 [[activities]]
 name = "KPAX"
@@ -20,9 +26,18 @@ description = "Kindred Peace Programme"
 link = "https://github.com/desirfoundation/kpax"
 mach = "1.001"
 
+
 [[activities]]
-name = "arepodesir"
-kind = "README"
+name = "drkaitwhitcomb"
+kind = "Portfolio Website"
 description = "This very README file & its Production Rules."
-link = "https://github.com/desirtechnologies/blackprint"
-mach = "2025-12-31"
+link = "https://github.com/drkaitwhitcomb/drkaitwhitcomb"
+mach = "2.001"
+
+
+[[activities]]
+name = "gideon"
+kind = "Portfolio Website"
+description = "This very README file & its Production Rules."
+link = "https://github.com/drkaitwhitcomb/drkaitwhitcomb"
+mach = "2.001"

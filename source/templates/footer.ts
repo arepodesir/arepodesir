@@ -1,3 +1,5 @@
+import { md } from "@/lib/markdown";
+
 export const renderFooter = (config: FooterConfig): string => {
   const now = new Date().toISOString();
 
@@ -8,7 +10,7 @@ export const renderFooter = (config: FooterConfig): string => {
 </tr>
 
 <tr align="center">
-<th align="center">Made with &nbsp; <3 &nbsp; by Arepo Desir | <code> ${config.copyright}</code> | <code>MACH ${config.mach}</code></th>
+<th align="center">Made with &nbsp; <3 &nbsp; by Arepo Desir | <code>${Date.now()}© ${config.copyright}</code> | <code>MACH ${config.mach}</code></th>
 </tr>
 
 <tr align="center">

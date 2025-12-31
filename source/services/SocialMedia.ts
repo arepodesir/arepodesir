@@ -1,1 +1,11 @@
-export function SocialMedia() {}
+export function SocialMedia() {
+
+    return {
+        x: () => { },
+        youtube: () => { },
+        instagram: () => { },
+        twitter: () => { },
+        linkedin: () => { },
+        github: () => { },
+    }
+}

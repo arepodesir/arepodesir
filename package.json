@@ -1,10 +1,10 @@
 {
   "name": "arepodesir",
-  "module": "src/index.ts",
+  "module": "source/index.ts",
   "type": "module",
   "private": true,
   "version": "1.0.1",
-  "description": "The Offical README of Arepo Desir",
+  "description": "The Offical README of Arepo Desir.",
   "author": "Arepo Desir <arepodesir@gmail.com>",
   "license": "MIT",
   "homepage": "https://whoisarepo.space",
@@ -13,9 +13,7 @@
     "url": "https://github.com/arepodesir/arepodesir.git"
   },
   "scripts": {
-    "generate-readme": "bun run ./source/main/main.ts",
-    "dev": "bun run ./source/main/main.ts"
-  },
+    "main": "./build/bin/bb run main"  },
   "devDependencies": {
     "@types/bun": "latest"
   },

@@ -1,0 +1,3 @@
+{:tasks
+ {main (shell "bun run source/main/main.ts")
+  generate-readme (shell "./build/scripts/generate-readme.clj")}}
