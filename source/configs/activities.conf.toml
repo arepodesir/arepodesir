@@ -7,21 +7,21 @@ mach = "1.001"
 
 [[activities]]
 name = "LOGOS"
-kind = "[OPERATING SYSTEM]"
+kind = "Operating System"
 description = "A distributed web-operating system."
 link = "https://github.com/logos-os/logos"
 mach = "1.0001"
 
 [[activities]]
 name = "LOVE-LANG"
-kind = "EDU"
+kind = "Programming Language"
 description = "The List Oriented Virtualized Evaluator"
 link = "https://github.com/love-metalang/love-lang"
 mach = "1.001"
 
 [[activities]]
 name = "KPAX"
-kind = "Forum"
+kind = "A Political Forum."
 description = "Kindred Peace Programme"
 link = "https://github.com/desirfoundation/kpax"
 mach = "1.001"
@@ -37,7 +37,7 @@ mach = "2.001"
 
 [[activities]]
 name = "gideon"
-kind = "Portfolio Website"
+kind = "Inference Platform"
 description = "This very README file & its Production Rules."
-link = "https://github.com/drkaitwhitcomb/drkaitwhitcomb"
-mach = "2.001"
+link = "https://github.com/desirablesolutions/gideon"
+mach = "1.001"

@@ -1,9 +1,32 @@
-main
-main.prelude
+direction: right
 
-lib
-lib.readme
+main: Main Application {
+  icon: material/settings_applications
 
-configs
+  prelude: Prelude {
+    icon: material/start
+  }
+}
 
-configs -> templates
+lib: Library {
+  icon: material/library_books
+
+  readme: Documentation {
+    icon: material/description
+  }
+}
+
+configs: Configurations {
+  icon: material/settings
+}
+
+templates: Templates {
+  icon: material/file_copy
+}
+
+# Connections showing the flow
+main -> lib: uses
+main -> configs: loads
+configs -> templates: defines
+lib.readme -> lib: describes
+main.prelude -> main: initializes

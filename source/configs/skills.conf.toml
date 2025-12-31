@@ -1,145 +1,145 @@
 # Skills, Languages, Socials, and Links Configuration
 
 [[socials]]
-src = "./source/icons/youtube.svg"
+src = "./source/assets/icons/youtube.svg"
 height = "25px"
 width = "25px"
 alt = "YouTube"
 
 [[socials]]
-src = "./source/icons/whatsapp.svg"
+src = "./source/assets/icons/whatsapp.svg"
 height = "25px"
 width = "25px"
 alt = "WhatsApp"
 
 [[socials]]
-src = "./source/icons/upwork.svg"
+src = "./source/assets/assets/icons/upwork.svg"
 height = "25px"
 width = "25px"
 alt = "Upwork"
 
 [[socials]]
-src = "./source/icons/soundcloud.svg"
+src = "./source/assets/icons/soundcloud.svg"
 height = "25px"
 width = "25px"
 alt = "SoundCloud"
 
 [[socials]]
-src = "./source/icons/linkedin.svg"
+src = "./source/assets/icons/linkedin.svg"
 height = "25px"
 width = "25px"
 alt = "LinkedIn"
 
 [[socials]]
-src = "./source/icons/kickstarter.svg"
+src = "./source/assets/icons/kickstarter.svg"
 height = "25px"
 width = "25px"
 alt = "Kickstarter"
 
 [[languages]]
-src = "./source/icons/clojure.svg"
+src = "./source/assets/icons/clojure.svg"
 height = "25px"
 width = "25px"
 alt = "Clojure"
 
 [[languages]]
-src = "./source/icons/css3.svg"
+src = "./source/assets/icons/css3.svg"
 height = "25px"
 width = "25px"
 alt = "CSS3"
 
 [[languages]]
-src = "./source/icons/deno.svg"
+src = "./source/assets/icons/deno.svg"
 height = "25px"
 width = "25px"
 alt = "Deno"
 
 [[languages]]
-src = "./source/icons/discord.svg"
+src = "./source/assets/icons/discord.svg"
 height = "25px"
 width = "25px"
 alt = "Discord"
 
 [[languages]]
-src = "./source/icons/go.svg"
+src = "./source/assets/icons/go.svg"
 height = "25px"
 width = "25px"
 alt = "Go"
 
 [[languages]]
-src = "./source/icons/java.svg"
+src = "./source/assets/icons/java.svg"
 height = "25px"
 width = "25px"
 alt = "Java"
 
 [[skills]]
-src = "./source/icons/astro.svg"
+src = "./source/assets/icons/astro.svg"
 height = "25px"
 width = "25px"
 alt = "Astro"
 
 [[skills]]
-src = "./source/icons/bun.svg"
+src = "./source/assets/icons/bun.svg"
 height = "25px"
 width = "25px"
 alt = "Bun"
 
 [[skills]]
-src = "./source/icons/python.svg"
+src = "./source/assets/icons/python.svg"
 height = "25px"
 width = "25px"
 alt = "Python"
 
 [[skills]]
-src = "./source/icons/npm.svg"
+src = "./source/assets/icons/npm.svg"
 height = "25px"
 width = "25px"
 alt = "NPM"
 
 [[skills]]
-src = "./source/icons/javascript.svg"
+src = "./source/assets/icons/javascript.svg"
 height = "25px"
 width = "25px"
 alt = "JavaScript"
 
 [[skills]]
-src = "./source/icons/facebook.svg"
+src = "./source/assets/icons/facebook.svg"
 height = "25px"
 width = "25px"
 alt = "Facebook"
 
 [[links]]
-src = "./source/icons/ko-fi.svg"
+src = "./source/assets/icons/ko-fi.svg"
 height = "25px"
 width = "25px"
 alt = "Ko-fi"
 
 [[links]]
-src = "./source/icons/nodejs.svg"
+src = "./source/assets/icons/nodejs.svg"
 height = "45px"
 width = "45px"
 alt = "Node.js"
 
 [[links]]
-src = "./source/icons/bitcoin.svg"
+src = "./source/assets/icons/bitcoin.svg"
 height = "25px"
 width = "25px"
 alt = "Bitcoin"
 
 [[links]]
-src = "./source/icons/react.svg"
+src = "./source/assets/icons/react.svg"
 height = "25px"
 width = "25px"
 alt = "React"
 
 [[links]]
-src = "./source/icons/twitter.svg"
+src = "./source/assets/icons/twitter.svg"
 height = "25px"
 width = "25px"
 alt = "Twitter"
 
 [[links]]
-src = "./source/icons/typescript.svg"
+src = "./source/assets/icons/typescript.svg"
 height = "25px"
 width = "25px"
 alt = "TypeScript"
