@@ -108,6 +108,8 @@ const pink = {
  */
 export function defineTerminal(config: TerminalConfig = {}) {
     const { verbose = false, quiet = false } = config;
+    const box = BoxChars.rounded;
+    const width = 100;
 
     const write = (message: string): void => {
         if (!quiet) {
@@ -115,12 +117,40 @@ export function defineTerminal(config: TerminalConfig = {}) {
         }
     };
 
+    const boxLine = (content: string, pad = true): string => {
+        const innerWidth = width - 4;
+        const paddedContent = pad ? content.padEnd(innerWidth) : content;
+        return `${PinkPalette.pink}${box.vertical}${RESET}  ${paddedContent}  ${PinkPalette.pink}${box.vertical}${RESET}`;
+    };
+
+    const boxTop = (): string =>
+        `${PinkPalette.pink}${box.topLeft}${"─".repeat(width - 2)}${box.topRight}${RESET}`;
+
+    const boxBottom = (): string =>
+        `${PinkPalette.pink}${box.bottomLeft}${"─".repeat(width - 2)}${box.bottomRight}${RESET}`;
+
+    const boxDivider = (): string =>
+        `${PinkPalette.pink}├${"─".repeat(width - 2)}┤${RESET}`;
+
     return {
         /**
-         * Print pretty ASCII art banner
+         * Print pretty ASCII art banner with generation header
          */
         printArt(): void {
             write(AREPODESIR_ART);
+            write("");
+            write(boxTop());
+            write(boxLine(`${pink.bold("💖 README GENERATOR 💖")}`.padStart(50)));
+            write(boxLine(`${pink.lavender("v1.001 • Fabulously crafting your README")}`.padStart(54)));
+            write(boxDivider());
+        },
+
+        /**
+         * Close the generation box
+         */
+        closeBox(): void {
+            write(boxBottom());
+            write("");
         },
 
         /**
@@ -137,24 +167,24 @@ export function defineTerminal(config: TerminalConfig = {}) {
         },
 
         /**
-         * Print a step indicator with pink arrow
+         * Print a step indicator inside the box
          */
         step(message: string): void {
-            write(`${PinkPalette.pink}${Symbols.arrow}${RESET} ${message}`);
+            write(boxLine(`${PinkPalette.pink}→${RESET} ${message}`));
         },
 
         /**
-         * Print success status with sparkles
+         * Print success status with sparkles inside the box
          */
         success(message: string): void {
-            write(`${PinkPalette.lightPink}✧${RESET} ${styled.success(message)}`);
+            write(boxLine(`${PinkPalette.lightPink}✧${RESET} ${styled.success(message)}`));
         },
 
         /**
          * Print error status
          */
         error(message: string): void {
-            write(defineStatus({ type: "error", message }));
+            write(boxLine(`${styled.error("✗")} ${message}`));
         },
 
         /**
@@ -176,7 +206,7 @@ export function defineTerminal(config: TerminalConfig = {}) {
          */
         verbose(message: string): void {
             if (verbose) {
-                write(styled.dim(`  ${message}`));
+                write(boxLine(`  ${styled.dim(message)}`));
             }
         },
 
@@ -191,16 +221,8 @@ export function defineTerminal(config: TerminalConfig = {}) {
          * Print generation result summary with extra wide pretty pink box
          */
         result(result: GenerationResult, versionHash?: string): void {
-            const box = BoxChars.rounded;
-            const width = 80;
             const innerWidth = width - 4;
             const pad = (s: string, len: number) => s.padEnd(len);
-            const center = (s: string, len: number) => {
-                const padding = Math.max(0, len - s.length);
-                const left = Math.floor(padding / 2);
-                const right = padding - left;
-                return " ".repeat(left) + s + " ".repeat(right);
-            };
 
             const fabulousMsg = getRandomFabulousMessage();
             const hash = versionHash ?? "generated";
@@ -208,34 +230,33 @@ export function defineTerminal(config: TerminalConfig = {}) {
             const dateStr = now.toLocaleDateString("en-US", { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
             const timeStr = now.toLocaleTimeString("en-US", { hour: '2-digit', minute: '2-digit', second: '2-digit' });
 
-            write("");
-            write(`${PinkPalette.pink}${box.topLeft}${"─".repeat(width - 2)}${box.topRight}${RESET}`);
-            write(`${PinkPalette.pink}${box.vertical}${RESET}${center(pink.bold("✨ README FABULOUSLY GENERATED! ✨"), innerWidth + 20)}${PinkPalette.pink}${box.vertical}${RESET}`);
-            write(`${PinkPalette.pink}${box.vertical}${RESET}${center(pink.lavender(fabulousMsg), innerWidth + 20)}${PinkPalette.pink}${box.vertical}${RESET}`);
-            write(`${PinkPalette.pink}├${"─".repeat(width - 2)}┤${RESET}`);
+            write(boxDivider());
+            write(boxLine(`${pink.bold("✨ FABULOUSLY GENERATED! ✨")}`.padStart(52)));
+            write(boxLine(`${pink.lavender(fabulousMsg)}`.padStart(52)));
+            write(boxDivider());
 
             // Metadata section
-            write(`${PinkPalette.pink}${box.vertical}${RESET} ${pink.heart("OUTPUT")}                                                                 ${PinkPalette.pink}${box.vertical}${RESET}`);
-            write(`${PinkPalette.pink}${box.vertical}${RESET}   ${pink.rose("💾 File:")} ${pad(result.outputPath, innerWidth - 12)}${PinkPalette.pink}${box.vertical}${RESET}`);
-            write(`${PinkPalette.pink}${box.vertical}${RESET}   ${pink.rose("🏷️  Hash:")} ${pad(hash, innerWidth - 12)}${PinkPalette.pink}${box.vertical}${RESET}`);
-            write(`${PinkPalette.pink}${box.vertical}${RESET}                                                                              ${PinkPalette.pink}${box.vertical}${RESET}`);
+            write(boxLine(`${pink.heart("OUTPUT")}`));
+            write(boxLine(`  ${pink.rose("💾 File:")} ${pad(result.outputPath, innerWidth - 14)}`));
+            write(boxLine(`  ${pink.rose("🏷️  Hash:")} ${pad(hash, innerWidth - 14)}`));
+            write(boxLine(``));
 
-            write(`${PinkPalette.pink}${box.vertical}${RESET} ${pink.heart("STATS")}                                                                  ${PinkPalette.pink}${box.vertical}${RESET}`);
-            write(`${PinkPalette.pink}${box.vertical}${RESET}   ${pink.rose("📊 Sections:")} ${pad(String(result.sections.length) + " fabulous sections", innerWidth - 16)}${PinkPalette.pink}${box.vertical}${RESET}`);
-            write(`${PinkPalette.pink}${box.vertical}${RESET}   ${pink.rose("📅 Date:")} ${pad(dateStr, innerWidth - 12)}${PinkPalette.pink}${box.vertical}${RESET}`);
-            write(`${PinkPalette.pink}${box.vertical}${RESET}   ${pink.rose("⏰ Time:")} ${pad(timeStr, innerWidth - 12)}${PinkPalette.pink}${box.vertical}${RESET}`);
-            write(`${PinkPalette.pink}${box.vertical}${RESET}                                                                              ${PinkPalette.pink}${box.vertical}${RESET}`);
+            write(boxLine(`${pink.heart("STATS")}`));
+            write(boxLine(`  ${pink.rose("📊 Sections:")} ${pad(String(result.sections.length) + " fabulous sections", innerWidth - 18)}`));
+            write(boxLine(`  ${pink.rose("📅 Date:")} ${pad(dateStr, innerWidth - 14)}`));
+            write(boxLine(`  ${pink.rose("⏰ Time:")} ${pad(timeStr, innerWidth - 14)}`));
+            write(boxLine(``));
 
             // Section list
-            write(`${PinkPalette.pink}${box.vertical}${RESET} ${pink.heart("SECTIONS")}                                                               ${PinkPalette.pink}${box.vertical}${RESET}`);
+            write(boxLine(`${pink.heart("SECTIONS")}`));
             const sectionList = result.sections.join(" 💕 ");
             const maxLen = innerWidth - 4;
             const wrapped = sectionList.length > maxLen
                 ? sectionList.slice(0, maxLen - 3) + "..."
                 : sectionList;
-            write(`${PinkPalette.pink}${box.vertical}${RESET}   ${pink.light(wrapped)}${" ".repeat(Math.max(0, innerWidth - wrapped.length - 2))}${PinkPalette.pink}${box.vertical}${RESET}`);
+            write(boxLine(`  ${pink.light(wrapped)}`));
 
-            write(`${PinkPalette.pink}${box.bottomLeft}${"─".repeat(width - 2)}${box.bottomRight}${RESET}`);
+            write(boxBottom());
             write("");
             write(`${pink.sparkle("    ✨ Your README is serving! Go forth and slay, bestie! ✨")}`);
             write("");
@@ -258,8 +279,8 @@ export function defineTerminal(config: TerminalConfig = {}) {
         /**
          * Print a pink divider
          */
-        divider(width = 80): void {
-            write(`${PinkPalette.lightPink}${"─".repeat(width)}${RESET}`);
+        divider(w = 80): void {
+            write(`${PinkPalette.lightPink}${"─".repeat(w)}${RESET}`);
         },
 
         /**

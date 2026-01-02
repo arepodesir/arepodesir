@@ -1,10 +1,3 @@
-/**
- * Program Prelude
- * Core orchestration module providing program initialization and the main Effect pipeline
- * 
- * @module main/prelude
- */
-
 import { Effect, pipe, Match } from "effect";
 import { loadAllConfigs } from "../utils/config.js";
 import { writeReadme } from "@/services/Writer.js";
