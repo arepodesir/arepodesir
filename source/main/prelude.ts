@@ -14,14 +14,8 @@ import type {
 
 // =============================================================================
 // Program Constants
-// =============================================================================
-
 export const PROJECT_ROOT = WORKING_DIRECTORY;
 export const CONFIG_DIR = `${PROJECT_ROOT}/source/configs`;
-
-// =============================================================================
-// Section Names for Summary
-// =============================================================================
 
 const ALL_SECTIONS = [
   "banner",
@@ -40,15 +34,8 @@ const ALL_SECTIONS = [
   "footer",
 ] as const;
 
-// =============================================================================
-// Error Types & Handler
-// =============================================================================
-
 export type AppError = ConfigNotFoundError | ConfigParseError | WriteError;
 
-/**
- * Exhaustive error handler with pattern matching
- */
 export const handleError = (error: AppError): string =>
   pipe(
     Match.value(error),
@@ -67,14 +54,7 @@ export const handleError = (error: AppError): string =>
     Match.exhaustive,
   );
 
-// =============================================================================
-// Main Generation Pipeline
-// =============================================================================
 
-/**
- * The core README generation Effect pipeline
- * Uses Terminal service for all output with pretty girly styling
- */
 export const generateReadme: Effect.Effect<GenerationResult, AppError> = pipe(
   // Step 0: Print pretty ASCII art banner
   Effect.sync(() => Terminal.printArt()),
@@ -122,9 +102,7 @@ export const generateReadme: Effect.Effect<GenerationResult, AppError> = pipe(
   Effect.tap((result) => Effect.sync(() => Terminal.result(result))),
 );
 
-// =============================================================================
-// Re-exports
-// =============================================================================
+
 
 export { Terminal, MESSAGES };
 export { renderReadme };
