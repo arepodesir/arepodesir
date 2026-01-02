@@ -1,33 +1,25 @@
-import { Effect, Console } from "effect";
-import * as prelude from "@/main/prelude"
-
-import { compose, Functional } from "@/lib"
-import { MESSAGES } from "@/data"
+import * as prelude from "@/main";
+import { compose, Functional } from "@/lib";
+import { Terminal } from "@/services";
 
 export async function main(): Promise<void> {
+  const { generateReadme, handleError } = prelude;
+  const { runPromise, catchAll, flatMap, fail } = Functional;
 
-  const { generateReadme, handleError } = prelude
-
-  MESSAGES.print()
-
-  const result = await Functional.runPromise(
+  await runPromise(
     compose(
       generateReadme,
-      Effect.catchAll((error) =>
+      catchAll((error) =>
         compose(
-          Console.error(handleError(error)),
-          Effect.flatMap(() => Effect.fail(error)),
+          Terminal.logError(handleError(error)),
+          flatMap(() => fail(error)),
         ),
       ),
     ),
   ).catch(() => {
-    console.error("\n❌ Generation failed!");
+    Terminal.error("Generation failed!");
     process.exit(1);
   });
-
-  if (result) {
-    MESSAGES.success(result);
-  }
 }
 
 await main();

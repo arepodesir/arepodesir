@@ -1,0 +1,32 @@
+# Badges Configuration
+# Technology stack, repo stats, and profile badges
+
+[[badges]]
+src = "https://img.shields.io/github/stars/arepodesir/arepodesir?style=social"
+alt = "GitHub Stars"
+link = "https://github.com/arepodesir/arepodesir"
+
+[[badges]]
+src = "https://img.shields.io/github/followers/arepodesir?style=social"
+alt = "GitHub Followers"
+link = "https://github.com/arepodesir"
+
+[[badges]]
+src = "https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+alt = "TypeScript"
+
+[[badges]]
+src = "https://img.shields.io/badge/Effect--TS-000000?style=for-the-badge&logo=effect&logoColor=white"
+alt = "Effect-TS"
+
+[[badges]]
+src = "https://img.shields.io/badge/Bun-000000?style=for-the-badge&logo=bun&logoColor=white"
+alt = "Bun"
+
+[[badges]]
+src = "https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"
+alt = "React"
+
+[[badges]]
+src = "https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white"
+alt = "Rust"

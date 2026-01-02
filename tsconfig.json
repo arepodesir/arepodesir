@@ -18,7 +18,8 @@
       "esnext"
     ],
     "types": [
-      "node"
+      "node",
+      "bun"
     ],
     "sourceMap": true,
     "declaration": true,

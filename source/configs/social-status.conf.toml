@@ -1,0 +1,21 @@
+# Social Status Configuration
+# Displays current mood, activity, and GitHub statistics
+
+[status]
+mood = "🚀 Building"
+activity = "Deep Work Mode"
+currentProject = "arepodesir"
+
+[stats]
+contributionGraphUrl = "https://ghchart.rshah.org/arepodesir"
+streakStatsUrl = "https://github-readme-streak-stats.herokuapp.com/?user=arepodesir&theme=dark"
+profileViewsUrl = "https://komarev.com/ghpvc/?username=arepodesir&color=blueviolet"
+
+[[badges]]
+src = "https://img.shields.io/badge/status-available-brightgreen?style=for-the-badge"
+alt = "Available"
+link = "https://whoisarepo.space/contact"
+
+[[badges]]
+src = "https://img.shields.io/badge/open%20to-collaboration-blue?style=for-the-badge"
+alt = "Open to Collaboration"

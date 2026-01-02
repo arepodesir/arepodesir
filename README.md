@@ -19,6 +19,32 @@
 
 ### *[forge](https://whoisarepo.fyi) [a](https://desirfoundation.space) [better](https://whoisarepo.space) [phaneron.](https://logos.computer)*
 
+<h2 align="center">🛠️ TECH STACK</h2>
+
+<p align="center">
+<a href="https://github.com/arepodesir/arepodesir"><img src="https://img.shields.io/github/stars/arepodesir/arepodesir?style=social" alt="GitHub Stars" /></a> <a href="https://github.com/arepodesir"><img src="https://img.shields.io/github/followers/arepodesir?style=social" alt="GitHub Followers" /></a> <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Effect--TS-000000?style=for-the-badge&logo=effect&logoColor=white" alt="Effect-TS" /> <img src="https://img.shields.io/badge/Bun-000000?style=for-the-badge&logo=bun&logoColor=white" alt="Bun" /> <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" /> <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
+</p>
+
+<h2 align="center">📊 STATUS</h2>
+
+| Status | Value |
+| :--- | :--- |
+| 🎭 **Mood** | 🚀 Building |
+| ⚡ **Activity** | Deep Work Mode |
+| 🔨 **Current Project** | `arepodesir` |
+
+<p align="center">
+  <img src="https://ghchart.rshah.org/arepodesir" alt="Contribution Graph" />
+</p>
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=arepodesir&theme=dark" alt="GitHub Streak" />
+</p>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=arepodesir&color=blueviolet" alt="Profile Views" />
+</p>
+
+<p align="center"><a href="https://whoisarepo.space/contact"><img src="https://img.shields.io/badge/status-available-brightgreen?style=for-the-badge" alt="Available" /></a> <img src="https://img.shields.io/badge/open%20to-collaboration-blue?style=for-the-badge" alt="Open to Collaboration" /></p>
+
 <h1 align="center">LATEST ACTIVITIES</h1>
 
 | NAME | KIND | TL;DR | LINK | MACH |
@@ -88,7 +114,7 @@
 </tr>
 
 <tr align="center">
-<th align="center"><i>Last Updated:</i> <code>2025-12-31T21:06:23.397Z</code></th>
+<th align="center"><i>Last Updated:</i> <code>2026-01-02T00:16:11.363Z</code></th>
 </tr>
 
 </table>

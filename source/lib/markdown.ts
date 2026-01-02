@@ -14,6 +14,17 @@ export const md = (
 
 export const html = md;
 
+/** Tagged template for h2 headings */
+export const h2 = (
+    strings: TemplateStringsArray,
+    ...expressions: unknown[]
+): string => `## ${md(strings, ...expressions)}`;
+
+/** Tagged template for paragraphs */
+export const p = (
+    strings: TemplateStringsArray,
+    ...expressions: unknown[]
+): string => md(strings, ...expressions);
 
 
 export const heading = (level: 1 | 2 | 3 | 4 | 5 | 6, text: string): string =>

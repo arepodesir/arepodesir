@@ -2,8 +2,6 @@
  * Core types for README generation
  * Using Effect patterns for functional, type-safe programming
  */
-import { Effect, pipe, Match } from "effect";
-import type { ParseError } from "effect/ParseResult";
 
 // =============================================================================
 // Config Types (mapped from TOML)
@@ -128,6 +126,45 @@ export type AppError =
     | WriteError;
 
 // =============================================================================
+// Social Status Types
+// =============================================================================
+
+export interface SocialStatusBadge {
+    readonly src: string;
+    readonly alt: string;
+    readonly link?: string;
+}
+
+export interface SocialStatusConfig {
+    readonly status: {
+        readonly mood: string;
+        readonly activity: string;
+        readonly currentProject?: string;
+    };
+    readonly stats?: {
+        readonly contributionGraphUrl?: string;
+        readonly streakStatsUrl?: string;
+        readonly profileViewsUrl?: string;
+    };
+    readonly badges?: readonly SocialStatusBadge[];
+}
+
+// =============================================================================
+// Badges Types
+// =============================================================================
+
+export interface BadgeConfig {
+    readonly src: string;
+    readonly alt: string;
+    readonly link?: string;
+    readonly style?: 'flat' | 'flat-square' | 'plastic' | 'for-the-badge' | 'social';
+}
+
+export interface BadgesConfig {
+    readonly badges: readonly BadgeConfig[];
+}
+
+// =============================================================================
 // Generation Result
 // =============================================================================
 
@@ -136,3 +173,4 @@ export interface GenerationResult {
     readonly sections: readonly string[];
     readonly timestamp: Date;
 }
+

@@ -1,4 +1,4 @@
-import { Effect, pipe } from "effect";
+import { Effect } from "effect";
 import { WriteError } from "../types/types.js";
 
 export const writeFile = (

@@ -1,92 +1,104 @@
-import { Effect, pipe, Match, Console } from "effect";
+/**
+ * Program Prelude
+ * Core orchestration module providing program initialization and the main Effect pipeline
+ * 
+ * @module main/prelude
+ */
+
+import { Effect, pipe, Match } from "effect";
 import { loadAllConfigs } from "../utils/config.js";
 import { writeReadme } from "@/services/Writer.js";
-
+import { Terminal, MESSAGES } from "@/services";
+import { renderReadme } from "@/templates";
+import { WORKING_DIRECTORY } from "../utils/utils.js";
 
 import type {
   ConfigNotFoundError,
   ConfigParseError,
   WriteError,
   GenerationResult,
-  BannerConfig,
-  HeaderConfig,
-  FooterConfig,
-  SkillsConfig,
-  ActivityConfig,
-} from "../types/types.js";
+} from "@/types";
 
-import { WORKING_DIRECTORY } from "../utils/utils.js";
-import { renderReadme } from "../templates/sections.js";
-export { renderReadme };
-
+// =============================================================================
+// Program Constants
+// =============================================================================
 
 export const PROJECT_ROOT = WORKING_DIRECTORY;
-
 export const CONFIG_DIR = `${PROJECT_ROOT}/source/configs`;
+
+// =============================================================================
+// Error Types & Handler
+// =============================================================================
 
 export type AppError = ConfigNotFoundError | ConfigParseError | WriteError;
 
+/**
+ * Exhaustive error handler with pattern matching
+ */
 export const handleError = (error: AppError): string =>
   pipe(
     Match.value(error),
     Match.when(
       { _tag: "ConfigNotFoundError" },
-      (e) => `❌ Config file not found: ${e.path}`,
+      (e) => `Config file not found: ${e.path}`,
     ),
     Match.when(
       { _tag: "ConfigParseError" },
-      (e) => `❌ Failed to parse config ${e.path}: ${e.message}`,
+      (e) => `Failed to parse config ${e.path}: ${e.message}`,
     ),
     Match.when(
       { _tag: "WriteError" },
-      (e) => `❌ Failed to write file ${e.path}: ${e.message}`,
+      (e) => `Failed to write file ${e.path}: ${e.message}`,
     ),
     Match.exhaustive,
   );
 
+// =============================================================================
+// Main Generation Pipeline
+// =============================================================================
+
+/**
+ * The core README generation Effect pipeline
+ * Uses Terminal service for all output instead of Console.log
+ */
 export const generateReadme: Effect.Effect<GenerationResult, AppError> = pipe(
   // Step 1: Load all configs
   Effect.tap(Effect.void, () =>
-    Console.log("📦 Loading configuration files..."),
+    Terminal.logStep("Loading configuration files..."),
   ),
   Effect.flatMap(() => loadAllConfigs(CONFIG_DIR)),
   Effect.tap((configs) =>
-    Console.log(`✓ Loaded ${Object.keys(configs).length} config files`),
+    Terminal.logSuccess(`Loaded ${Object.keys(configs).length} config files`),
   ),
 
   // Step 2: Render README
-  Effect.tap(() => Console.log("📝 Rendering README...")),
+  Effect.tap(() => Terminal.logStep("Rendering README...")),
   Effect.map((configs) => ({
     content: renderReadme(configs),
     configs,
   })),
-  Effect.tap(() => Console.log("✓ README rendered")),
+  Effect.tap(() => Terminal.logSuccess("README rendered")),
 
   // Step 3: Write to file
-  Effect.tap(() => Console.log("💾 Writing README.md...")),
-  Effect.flatMap(({ content, configs }) =>
+  Effect.tap(() => Terminal.logStep("Writing README.md...")),
+  Effect.flatMap(({ content }) =>
     pipe(
       writeReadme(PROJECT_ROOT, content),
       Effect.map(() => ({
         outputPath: `${PROJECT_ROOT}/README.md`,
-        sections: ["banner", "header", "activities", "skills", "footer"],
+        sections: ["banner", "header", "activities", "skills", "footer"] as const,
         timestamp: new Date(),
       })),
     ),
   ),
   Effect.tap((result) =>
-    Console.log(`✓ README.md written to ${result.outputPath}`),
+    Terminal.logSuccess(`README.md written to ${result.outputPath}`),
   ),
 );
 
+// =============================================================================
+// Re-exports
+// =============================================================================
 
-export interface ReadmeData {
-  readonly banner: BannerConfig;
-  readonly header: HeaderConfig;
-  readonly activities: readonly ActivityConfig[];
-  readonly skills: SkillsConfig;
-  readonly footer: FooterConfig;
-}
-
-
-
+export { Terminal, MESSAGES };
+export { renderReadme };

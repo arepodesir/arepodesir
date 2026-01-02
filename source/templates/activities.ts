@@ -1,19 +1,8 @@
-import {
-  md,
-  html,
-  htmlImg,
-  htmlA,
-  htmlCenter,
-  htmlBlockquote,
-  table,
-  joinSections,
-  hr,
-  heading,
-  link,
-  code,
-} from "../lib/markdown.js";
+import type { ActivityConfig } from "@/types/types.js";
+import { defineTemplate } from "@/utils/utils.js";
+import { md, table } from "@/lib"
 
-export const activities = (activities: readonly ActivityConfig[]): string => {
+export const activities = defineTemplate((activities: readonly ActivityConfig[]) => {
   const tableContent = table(
     [
       { header: "NAME", align: "left" },
@@ -33,9 +22,9 @@ export const activities = (activities: readonly ActivityConfig[]): string => {
     })),
   );
 
-  return md`
+  return [md`
 <h1 align="center">LATEST ACTIVITIES</h1>
 
 ${tableContent}
-`;
-};
+`]
+});

@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "version": "1.0.1",
-  "description": "The Offical README of Arepo Desir.",
+  "description": "The Offical self-aware README of Arepo Desir.",
   "author": "Arepo Desir <arepodesir@gmail.com>",
   "license": "MIT",
   "homepage": "https://whoisarepo.space",
@@ -13,9 +13,11 @@
     "url": "https://github.com/arepodesir/arepodesir.git"
   },
   "scripts": {
-    "main": "./build/bin/bb run main"  },
+    "main": "./build/bin/bb run main",
+    "build": "bun build --compile --minify --sourcemap --bytecode ./source/main/main.ts --outfile ./build/bin/arepodesir"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "^1.3.5"
   },
   "peerDependencies": {
     "typescript": "^5"

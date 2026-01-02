@@ -1,32 +1,207 @@
 direction: right
 
+# =============================================================================
+# AREPODESIR README GENERATOR - ARCHITECTURE
+# A functional README generator built with Effect-TS
+# =============================================================================
+
+# Main Application Layer
 main: Main Application {
   icon: material/settings_applications
+  style.fill: "#1a1a2e"
 
   prelude: Prelude {
     icon: material/start
+    note: "Effect pipeline orchestration"
+  }
+
+  main: Entry Point {
+    icon: material/play_arrow
+    note: "Async runner with error handling"
   }
 }
 
+# Library Layer
 lib: Library {
   icon: material/library_books
+  style.fill: "#16213e"
 
-  readme: Documentation {
+  functionals: Functionals {
+    icon: material/functions
+    note: "Effect-TS abstractions & Result types"
+  }
+
+  markdown: Markdown DSL {
     icon: material/description
+    note: "Tagged template literals (md, h2, p)"
+  }
+
+  ansi: ANSI {
+    icon: material/palette
+    note: "Colors, styles, box-drawing"
+  }
+
+  tui: TUI Components {
+    icon: material/dashboard
+    note: "definePanel, defineProgress, defineStatus"
+  }
+
+  cli: CLI Framework {
+    icon: material/terminal
+    note: "defineCLI, defineProgram"
+  }
+
+  toml: TOML {
+    icon: material/data_object
+    note: "smol-toml parsing wrapper"
   }
 }
 
-configs: Configurations {
-  icon: material/settings
+# Services Layer
+services: Services {
+  icon: material/cloud
+  style.fill: "#0f3460"
+
+  writer: Writer {
+    icon: material/save
+    note: "File I/O with Effects (Bun.write)"
+  }
+
+  terminal: Terminal {
+    icon: material/computer
+    note: "TUI-enhanced output service"
+  }
+
+  readme: Readme {
+    icon: material/article
+    note: "High-level render service"
+  }
 }
 
+# Templates Layer
 templates: Templates {
   icon: material/file_copy
+  style.fill: "#533483"
+
+  banner: Banner {
+    icon: material/image
+    note: "renderBanner()"
+  }
+
+  header: Header {
+    icon: material/title
+    note: "renderHeader()"
+  }
+
+  activities: Activities {
+    icon: material/list
+    note: "renderActivities() - table"
+  }
+
+  skills: Skills {
+    icon: material/build
+    note: "renderSkills() - icon tables"
+  }
+
+  footer: Footer {
+    icon: material/copyright
+    note: "renderFooter()"
+  }
+
+  social: Social Status {
+    icon: material/emoji_emotions
+    note: "renderSocialStatus() - NEW"
+  }
+
+  badges: Badges {
+    icon: material/verified
+    note: "renderBadges() - NEW"
+  }
 }
 
-# Connections showing the flow
-main -> lib: uses
-main -> configs: loads
-configs -> templates: defines
-lib.readme -> lib: describes
-main.prelude -> main: initializes
+# Configuration Layer
+configs: Configurations {
+  icon: material/settings
+  style.fill: "#e94560"
+
+  banner_conf: banner.conf.toml
+  header_conf: header.conf.toml
+  footer_conf: footer.conf.toml
+  skills_conf: skills.conf.toml
+  activities_conf: activities.conf.toml
+  social_conf: social-status.conf.toml
+  badges_conf: badges.conf.toml
+}
+
+# Types Layer
+types: Types {
+  icon: material/code
+  style.fill: "#7952b3"
+  note: "ADTs with _tag discriminants"
+}
+
+# Data Layer
+data: Data {
+  icon: material/storage
+  style.fill: "#9b2335"
+  note: "PROGRAM constants, MESSAGES"
+}
+
+# Utils Layer
+utils: Utils {
+  icon: material/build
+  style.fill: "#00b894"
+
+  config: Config Loader {
+    icon: material/folder_open
+    note: "loadAllConfigs(), loadOptionalConfig()"
+  }
+
+  define: Factories {
+    icon: material/factory
+    note: "defineTemplate, defineService"
+  }
+}
+
+# =============================================================================
+# Connections
+# =============================================================================
+
+# Main orchestration flow
+main.main -> main.prelude: calls
+main.prelude -> services.terminal: logs
+main.prelude -> configs: loads via utils
+main.prelude -> templates: renders
+main.prelude -> services.writer: writes
+
+# Library dependencies
+lib.tui -> lib.ansi: uses
+lib.cli -> lib.tui: uses
+lib.cli -> lib.functionals: Effect types
+
+# Services to lib
+services.terminal -> lib.tui: defineTerminal
+services.terminal -> lib.ansi: styled output
+services.writer -> lib.functionals: Effect.tryPromise
+
+# Templates to lib
+templates -> lib.markdown: md template tag
+templates -> types: config types
+
+# Templates internal
+templates.banner -> configs.banner_conf
+templates.header -> configs.header_conf
+templates.activities -> configs.activities_conf
+templates.skills -> configs.skills_conf
+templates.footer -> configs.footer_conf
+templates.social -> configs.social_conf
+templates.badges -> configs.badges_conf
+
+# Utils
+utils.config -> lib.toml: parseTOML
+utils.config -> types: ConfigNotFoundError, ConfigParseError
+utils.config -> lib.functionals: Effect.all
+
+# Data layer
+data -> services.terminal: MESSAGES re-export
+main -> data: PROGRAM constants

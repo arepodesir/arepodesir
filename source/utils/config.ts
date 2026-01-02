@@ -3,7 +3,7 @@
  * Loads and parses TOML configuration files with Effect-based error handling
  */
 import { parse as parseToml } from "smol-toml";
-import { Effect, pipe } from "effect";
+import { Effect, pipe, Option } from "effect";
 import { ConfigNotFoundError, ConfigParseError } from "../types/types.js";
 import type {
     BannerConfig,
@@ -11,6 +11,8 @@ import type {
     FooterConfig,
     SkillsConfig,
     ActivityConfig,
+    SocialStatusConfig,
+    BadgesConfig,
 } from "../types/types.js";
 
 // =============================================================================
@@ -55,6 +57,18 @@ export const loadConfig = <T>(
     );
 
 /**
+ * Load a config file, returning None if not found (for optional configs)
+ */
+export const loadOptionalConfig = <T>(
+    path: string
+): Effect.Effect<Option.Option<T>, ConfigParseError> =>
+    pipe(
+        loadConfig<T>(path),
+        Effect.map(Option.some),
+        Effect.catchTag("ConfigNotFoundError", () => Effect.succeed(Option.none()))
+    );
+
+/**
  * Load banner configuration
  */
 export const loadBannerConfig = (
@@ -96,6 +110,22 @@ export const loadActivitiesConfig = (
     ConfigNotFoundError | ConfigParseError
 > => loadConfig<{ activities: readonly ActivityConfig[] }>(`${configDir}/activities.conf.toml`);
 
+/**
+ * Load social status configuration (optional)
+ */
+export const loadSocialStatusConfig = (
+    configDir: string
+): Effect.Effect<Option.Option<SocialStatusConfig>, ConfigParseError> =>
+    loadOptionalConfig<SocialStatusConfig>(`${configDir}/social-status.conf.toml`);
+
+/**
+ * Load badges configuration (optional)
+ */
+export const loadBadgesConfig = (
+    configDir: string
+): Effect.Effect<Option.Option<BadgesConfig>, ConfigParseError> =>
+    loadOptionalConfig<BadgesConfig>(`${configDir}/badges.conf.toml`);
+
 // =============================================================================
 // Aggregate Loader
 // =============================================================================
@@ -106,6 +136,8 @@ export interface LoadedConfigs {
     readonly footer: FooterConfig;
     readonly skills: SkillsConfig;
     readonly activities: readonly ActivityConfig[];
+    readonly socialStatus: Option.Option<SocialStatusConfig>;
+    readonly badges: Option.Option<BadgesConfig>;
 }
 
 /**
@@ -123,4 +155,6 @@ export const loadAllConfigs = (
             loadActivitiesConfig(configDir),
             Effect.map((c) => c.activities)
         ),
+        socialStatus: loadSocialStatusConfig(configDir),
+        badges: loadBadgesConfig(configDir),
     });

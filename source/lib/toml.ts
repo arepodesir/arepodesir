@@ -1,40 +1,30 @@
 /**
- * TOML Config Loader
- * Loads and parses TOML configuration files with Effect-based error handling
+ * TOML Parsing Utilities
+ * Re-exports smol-toml parser with Effect-based error handling pattern
+ * 
+ * @module lib/toml
  */
+
 import { parse as parseToml } from "smol-toml";
-import { Effect, pipe } from "effect";
-import { ConfigNotFoundError, ConfigParseError } from "../types/types.js";
-import type {
-    BannerConfig,
-    HeaderConfig,
-    FooterConfig,
-    SkillsConfig,
-    ActivityConfig,
-} from "../types/types.js";
+import { Effect } from "effect";
+import { ConfigParseError } from "../types/types.js";
 
 // =============================================================================
-// File Reading
+// TOML Parsing
 // =============================================================================
 
 /**
- * Read a file as text, returning Effect
+ * Parse TOML content into typed object
  */
-const readFile = (path: string): Effect.Effect<string, ConfigNotFoundError> =>
-    Effect.tryPromise({
-        try: () => Bun.file(path).text(),
-        catch: () => new ConfigNotFoundError(path),
-    });
-
-/**
- * Parse TOML string into object
- */
-const parseTOML = <T>(
-    path: string,
-    content: string
+export const parseTOML = <T>(
+    content: string,
+    path = "unknown"
 ): Effect.Effect<T, ConfigParseError> =>
     Effect.try({
         try: () => parseToml(content) as T,
         catch: (e) =>
             new ConfigParseError(path, e instanceof Error ? e.message : String(e)),
     });
+
+// Re-export for convenience
+export { parseToml };

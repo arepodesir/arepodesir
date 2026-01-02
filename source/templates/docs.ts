@@ -1,9 +1,17 @@
-import {README, config } from "./README"
-import type {IREADME } from "./README"
+/**
+ * Documentation Generator Stub
+ * Placeholder for future documentation generation features
+ * 
+ * @module templates/docs
+ */
 
-export interface IGENERATOR {
+export interface IGenerator {
+    // Future documentation generator interface
 }
 
-export function BUILD() {
-    const data = README(config)
-} 
+/**
+ * Build documentation - placeholder for future implementation
+ */
+export function buildDocs(): void {
+    // TODO: Implement documentation building
+}
