@@ -27,6 +27,27 @@ export const PROJECT_ROOT = WORKING_DIRECTORY;
 export const CONFIG_DIR = `${PROJECT_ROOT}/source/configs`;
 
 // =============================================================================
+// Section Names for Summary
+// =============================================================================
+
+const ALL_SECTIONS = [
+  "banner",
+  "header",
+  "badges",
+  "social-status",
+  "plugins",
+  "activities",
+  "education",
+  "skills",
+  "social-updates",
+  "news",
+  "resume",
+  "funding",
+  "faq",
+  "footer",
+] as const;
+
+// =============================================================================
 // Error Types & Handler
 // =============================================================================
 
@@ -59,16 +80,25 @@ export const handleError = (error: AppError): string =>
 
 /**
  * The core README generation Effect pipeline
- * Uses Terminal service for all output instead of Console.log
+ * Uses Terminal service for all output with pretty girly styling
  */
 export const generateReadme: Effect.Effect<GenerationResult, AppError> = pipe(
+  // Step 0: Print pretty ASCII art banner
+  Effect.sync(() => Terminal.printArt()),
+  Effect.tap(() => Terminal.log("")),
+
   // Step 1: Load all configs
-  Effect.tap(Effect.void, () =>
-    Terminal.logStep("Loading configuration files..."),
-  ),
+  Effect.tap(() => Terminal.logStep("Loading configuration files...")),
   Effect.flatMap(() => loadAllConfigs(CONFIG_DIR)),
   Effect.tap((configs) =>
-    Terminal.logSuccess(`Loaded ${Object.keys(configs).length} config files`),
+    Terminal.logSuccess(`Loaded ${Object.keys(configs).filter(k => {
+      const val = configs[k as keyof typeof configs];
+      // Count non-empty optional configs
+      if (val && typeof val === 'object' && '_tag' in val) {
+        return val._tag === 'Some';
+      }
+      return true;
+    }).length} config files`),
   ),
 
   // Step 2: Render README
@@ -86,7 +116,7 @@ export const generateReadme: Effect.Effect<GenerationResult, AppError> = pipe(
       writeReadme(PROJECT_ROOT, content),
       Effect.map(() => ({
         outputPath: `${PROJECT_ROOT}/README.md`,
-        sections: ["banner", "header", "activities", "skills", "footer"] as const,
+        sections: ALL_SECTIONS,
         timestamp: new Date(),
       })),
     ),
@@ -94,6 +124,9 @@ export const generateReadme: Effect.Effect<GenerationResult, AppError> = pipe(
   Effect.tap((result) =>
     Terminal.logSuccess(`README.md written to ${result.outputPath}`),
   ),
+
+  // Step 4: Show pretty result summary
+  Effect.tap((result) => Effect.sync(() => Terminal.result(result))),
 );
 
 // =============================================================================

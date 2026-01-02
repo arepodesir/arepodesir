@@ -174,3 +174,120 @@ export interface GenerationResult {
     readonly timestamp: Date;
 }
 
+// =============================================================================
+// Education Types
+// =============================================================================
+
+export interface EducationEntry {
+    readonly institution: string;
+    readonly degree: string;
+    readonly field?: string;
+    readonly years: string;
+    readonly logo?: string;
+    readonly link?: string;
+    readonly description?: string;
+}
+
+export interface EducationConfig {
+    readonly entries: readonly EducationEntry[];
+}
+
+// =============================================================================
+// Social Updates Types
+// =============================================================================
+
+export interface SocialUpdate {
+    readonly platform: string;
+    readonly icon: string;
+    readonly message: string;
+    readonly link?: string;
+    readonly timestamp?: string;
+}
+
+export interface SocialUpdatesConfig {
+    readonly updates: readonly SocialUpdate[];
+}
+
+// =============================================================================
+// News Feed Types
+// =============================================================================
+
+export interface NewsItem {
+    readonly title: string;
+    readonly source: string;
+    readonly link: string;
+    readonly date?: string;
+    readonly icon?: string;
+}
+
+export interface NewsConfig {
+    readonly title?: string;
+    readonly items: readonly NewsItem[];
+}
+
+// =============================================================================
+// Funding/Donation Types
+// =============================================================================
+
+export interface FundingPlatform {
+    readonly platform: string;
+    readonly username: string;
+    readonly url: string;
+    readonly icon?: string;
+    readonly badge?: string;
+    readonly description?: string;
+}
+
+export interface FundingConfig {
+    readonly title?: string;
+    readonly message?: string;
+    readonly platforms: readonly FundingPlatform[];
+}
+
+// =============================================================================
+// FAQ Types
+// =============================================================================
+
+export interface FAQItem {
+    readonly question: string;
+    readonly answer: string;
+    readonly category?: string;
+}
+
+export interface FAQConfig {
+    readonly title?: string;
+    readonly items: readonly FAQItem[];
+}
+
+// =============================================================================
+// Resume Links Types
+// =============================================================================
+
+export interface ResumeLink {
+    readonly label: string;
+    readonly format: string;
+    readonly url: string;
+    readonly icon?: string;
+    readonly style?: 'button' | 'badge' | 'link';
+}
+
+export interface ResumeConfig {
+    readonly title?: string;
+    readonly links: readonly ResumeLink[];
+}
+
+// =============================================================================
+// README Plugin Types
+// =============================================================================
+
+export interface ReadmePlugin {
+    readonly name: string;
+    readonly type: 'stats' | 'trophy' | 'activity' | 'quote' | 'snake' | 'custom';
+    readonly url: string;
+    readonly alt?: string;
+    readonly align?: 'left' | 'center' | 'right';
+}
+
+export interface PluginsConfig {
+    readonly plugins: readonly ReadmePlugin[];
+}

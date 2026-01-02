@@ -1,0 +1,17 @@
+# Education Configuration
+# Academic background and certifications
+
+[[entries]]
+institution = "Self-Taught"
+degree = "Autodidact"
+field = "Computer Science & Philosophy"
+years = "2015 - Present"
+description = "Systems programming, language design, distributed systems"
+
+[[entries]]
+institution = "Open Source University"
+degree = "Contributor"
+field = "Software Engineering"
+years = "2018 - Present"
+link = "https://github.com/arepodesir"
+description = "Active contributor to FOSS projects"

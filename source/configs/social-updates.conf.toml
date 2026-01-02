@@ -1,0 +1,20 @@
+# Social Updates Configuration
+# Latest updates from social media platforms
+
+[[updates]]
+platform = "Twitter/X"
+icon = "🐦"
+message = "Working on LOGOS OS - a distributed virtual operating system"
+link = "https://twitter.com/arepodesir"
+
+[[updates]]
+platform = "LinkedIn"
+icon = "💼"
+message = "Open to collaboration on systems programming projects"
+link = "https://linkedin.com/in/arepodesir"
+
+[[updates]]
+platform = "Blog"
+icon = "📝"
+message = "New post: Building Type-Safe README Generators with Effect-TS"
+link = "https://whoisarepo.space/blog"

@@ -1,0 +1,53 @@
+# Funding Configuration
+# Donation and sponsorship platforms (mirrors FUNDING.yml)
+
+title = "💖 SUPPORT MY WORK"
+message = "If you find my projects useful, consider supporting my open source work!"
+
+[[platforms]]
+platform = "GitHub Sponsors"
+username = "arepodesir"
+url = "https://github.com/sponsors/arepodesir"
+icon = "❤️"
+badge = "https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?style=for-the-badge&logo=github-sponsors"
+description = "Monthly sponsorship tiers with exclusive perks"
+
+[[platforms]]
+platform = "Ko-fi"
+username = "arepodesir"
+url = "https://ko-fi.com/arepodesir"
+icon = "☕"
+badge = "https://img.shields.io/badge/Support-Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white"
+description = "Buy me a coffee!"
+
+[[platforms]]
+platform = "Patreon"
+username = "arepodesir"
+url = "https://patreon.com/arepodesir"
+icon = "🎨"
+badge = "https://img.shields.io/badge/Support-Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white"
+description = "Exclusive content and early access"
+
+[[platforms]]
+platform = "Open Collective"
+username = "arepodesir"
+url = "https://opencollective.com/arepodesir"
+icon = "🌍"
+badge = "https://img.shields.io/badge/Support-Open%20Collective-7FADF2?style=for-the-badge&logo=open-collective"
+description = "Transparent funding for open source"
+
+[[platforms]]
+platform = "Buy Me a Coffee"
+username = "arepodesir"
+url = "https://buymeacoffee.com/arepodesir"
+icon = "🍵"
+badge = "https://img.shields.io/badge/Support-Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black"
+description = "One-time support"
+
+[[platforms]]
+platform = "Liberapay"
+username = "arepodesir"
+url = "https://liberapay.com/arepodesir"
+icon = "🎁"
+badge = "https://img.shields.io/badge/Support-Liberapay-F6C915?style=for-the-badge&logo=liberapay"
+description = "Recurring donations for FOSS"

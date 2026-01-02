@@ -13,6 +13,13 @@ import type {
     ActivityConfig,
     SocialStatusConfig,
     BadgesConfig,
+    EducationConfig,
+    SocialUpdatesConfig,
+    NewsConfig,
+    FundingConfig,
+    FAQConfig,
+    ResumeConfig,
+    PluginsConfig,
 } from "../types/types.js";
 
 // =============================================================================
@@ -68,63 +75,55 @@ export const loadOptionalConfig = <T>(
         Effect.catchTag("ConfigNotFoundError", () => Effect.succeed(Option.none()))
     );
 
-/**
- * Load banner configuration
- */
-export const loadBannerConfig = (
-    configDir: string
-): Effect.Effect<BannerConfig, ConfigNotFoundError | ConfigParseError> =>
+// =============================================================================
+// Core Config Loaders
+// =============================================================================
+
+export const loadBannerConfig = (configDir: string) =>
     loadConfig<BannerConfig>(`${configDir}/banner.conf.toml`);
 
-/**
- * Load header configuration
- */
-export const loadHeaderConfig = (
-    configDir: string
-): Effect.Effect<HeaderConfig, ConfigNotFoundError | ConfigParseError> =>
+export const loadHeaderConfig = (configDir: string) =>
     loadConfig<HeaderConfig>(`${configDir}/header.conf.toml`);
 
-/**
- * Load footer configuration
- */
-export const loadFooterConfig = (
-    configDir: string
-): Effect.Effect<FooterConfig, ConfigNotFoundError | ConfigParseError> =>
+export const loadFooterConfig = (configDir: string) =>
     loadConfig<FooterConfig>(`${configDir}/footer.conf.toml`);
 
-/**
- * Load skills configuration
- */
-export const loadSkillsConfig = (
-    configDir: string
-): Effect.Effect<SkillsConfig, ConfigNotFoundError | ConfigParseError> =>
+export const loadSkillsConfig = (configDir: string) =>
     loadConfig<SkillsConfig>(`${configDir}/skills.conf.toml`);
 
-/**
- * Load activities configuration
- */
-export const loadActivitiesConfig = (
-    configDir: string
-): Effect.Effect<
-    { activities: readonly ActivityConfig[] },
-    ConfigNotFoundError | ConfigParseError
-> => loadConfig<{ activities: readonly ActivityConfig[] }>(`${configDir}/activities.conf.toml`);
+export const loadActivitiesConfig = (configDir: string) =>
+    loadConfig<{ activities: readonly ActivityConfig[] }>(`${configDir}/activities.conf.toml`);
 
-/**
- * Load social status configuration (optional)
- */
-export const loadSocialStatusConfig = (
-    configDir: string
-): Effect.Effect<Option.Option<SocialStatusConfig>, ConfigParseError> =>
+// =============================================================================
+// Optional Config Loaders
+// =============================================================================
+
+export const loadSocialStatusConfig = (configDir: string) =>
     loadOptionalConfig<SocialStatusConfig>(`${configDir}/social-status.conf.toml`);
 
-/**
- * Load badges configuration (optional)
- */
-export const loadBadgesConfig = (
-    configDir: string
-): Effect.Effect<Option.Option<BadgesConfig>, ConfigParseError> =>
+export const loadBadgesConfig = (configDir: string) =>
     loadOptionalConfig<BadgesConfig>(`${configDir}/badges.conf.toml`);
+
+export const loadEducationConfig = (configDir: string) =>
+    loadOptionalConfig<EducationConfig>(`${configDir}/education.conf.toml`);
+
+export const loadSocialUpdatesConfig = (configDir: string) =>
+    loadOptionalConfig<SocialUpdatesConfig>(`${configDir}/social-updates.conf.toml`);
+
+export const loadNewsConfig = (configDir: string) =>
+    loadOptionalConfig<NewsConfig>(`${configDir}/news.conf.toml`);
+
+export const loadFundingConfig = (configDir: string) =>
+    loadOptionalConfig<FundingConfig>(`${configDir}/funding.conf.toml`);
+
+export const loadFAQConfig = (configDir: string) =>
+    loadOptionalConfig<FAQConfig>(`${configDir}/faq.conf.toml`);
+
+export const loadResumeConfig = (configDir: string) =>
+    loadOptionalConfig<ResumeConfig>(`${configDir}/resume.conf.toml`);
+
+export const loadPluginsConfig = (configDir: string) =>
+    loadOptionalConfig<PluginsConfig>(`${configDir}/plugins.conf.toml`);
 
 // =============================================================================
 // Aggregate Loader
@@ -136,8 +135,16 @@ export interface LoadedConfigs {
     readonly footer: FooterConfig;
     readonly skills: SkillsConfig;
     readonly activities: readonly ActivityConfig[];
+    // Optional sections
     readonly socialStatus: Option.Option<SocialStatusConfig>;
     readonly badges: Option.Option<BadgesConfig>;
+    readonly education: Option.Option<EducationConfig>;
+    readonly socialUpdates: Option.Option<SocialUpdatesConfig>;
+    readonly news: Option.Option<NewsConfig>;
+    readonly funding: Option.Option<FundingConfig>;
+    readonly faq: Option.Option<FAQConfig>;
+    readonly resume: Option.Option<ResumeConfig>;
+    readonly plugins: Option.Option<PluginsConfig>;
 }
 
 /**
@@ -147,6 +154,7 @@ export const loadAllConfigs = (
     configDir: string
 ): Effect.Effect<LoadedConfigs, ConfigNotFoundError | ConfigParseError> =>
     Effect.all({
+        // Required configs
         banner: loadBannerConfig(configDir),
         header: loadHeaderConfig(configDir),
         footer: loadFooterConfig(configDir),
@@ -155,6 +163,14 @@ export const loadAllConfigs = (
             loadActivitiesConfig(configDir),
             Effect.map((c) => c.activities)
         ),
+        // Optional configs
         socialStatus: loadSocialStatusConfig(configDir),
         badges: loadBadgesConfig(configDir),
+        education: loadEducationConfig(configDir),
+        socialUpdates: loadSocialUpdatesConfig(configDir),
+        news: loadNewsConfig(configDir),
+        funding: loadFundingConfig(configDir),
+        faq: loadFAQConfig(configDir),
+        resume: loadResumeConfig(configDir),
+        plugins: loadPluginsConfig(configDir),
     });

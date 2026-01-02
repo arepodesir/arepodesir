@@ -2,6 +2,14 @@ export * from "./activities";
 export * from "./sections";
 export * from "./social-status";
 export * from "./badges";
+export * from "./education";
+export * from "./social-updates";
+export * from "./news";
+export * from "./funding";
+export * from "./faq";
+export * from "./resume";
+export * from "./plugins";
+export * from "./base";
 
 import { Option } from "effect";
 import type {
@@ -13,6 +21,13 @@ import type {
     IconConfig,
     SocialStatusConfig,
     BadgesConfig,
+    EducationConfig,
+    SocialUpdatesConfig,
+    NewsConfig,
+    FundingConfig,
+    FAQConfig,
+    ResumeConfig,
+    PluginsConfig,
 } from "../types/types.js";
 import {
     md,
@@ -22,6 +37,14 @@ import {
 } from "../lib/markdown.js";
 import { renderSocialStatus } from "./social-status.js";
 import { renderBadges } from "./badges.js";
+import { renderEducation } from "./education.js";
+import { renderSocialUpdates } from "./social-updates.js";
+import { renderNews } from "./news.js";
+import { renderFunding } from "./funding.js";
+import { renderFAQ } from "./faq.js";
+import { renderResume } from "./resume.js";
+import { renderPlugins } from "./plugins.js";
+import { renderBaseComment, type BuildMetadata } from "./base.js";
 
 // =============================================================================
 // Banner Section
@@ -160,32 +183,90 @@ export interface ReadmeData {
     readonly activities: readonly ActivityConfig[];
     readonly skills: SkillsConfig;
     readonly footer: FooterConfig;
+    // Optional sections
     readonly socialStatus?: Option.Option<SocialStatusConfig>;
     readonly badges?: Option.Option<BadgesConfig>;
+    readonly education?: Option.Option<EducationConfig>;
+    readonly socialUpdates?: Option.Option<SocialUpdatesConfig>;
+    readonly news?: Option.Option<NewsConfig>;
+    readonly funding?: Option.Option<FundingConfig>;
+    readonly faq?: Option.Option<FAQConfig>;
+    readonly resume?: Option.Option<ResumeConfig>;
+    readonly plugins?: Option.Option<PluginsConfig>;
+}
+
+/**
+ * Helper to conditionally render an optional section
+ */
+const renderOptional = <T>(
+    option: Option.Option<T> | undefined,
+    render: (config: T) => string
+): string | null => {
+    if (!option || !Option.isSome(option)) return null;
+    const content = render(option.value);
+    return content || null;
+};
+
+export interface RenderResult {
+    readonly content: string;
+    readonly metadata: BuildMetadata;
 }
 
 export const renderReadme = (data: ReadmeData): string => {
+    // Generate build metadata with version hash
+    const { comment: baseComment } = renderBaseComment();
+
     const sections: string[] = [
+        // Add version hash comment at the very top
+        baseComment,
         renderBanner(data.banner),
         renderHeader(data.header),
     ];
 
-    // Add badges section if present
-    if (data.badges && Option.isSome(data.badges)) {
-        const badgesContent = renderBadges(data.badges.value);
-        if (badgesContent) sections.push(badgesContent);
-    }
+    // Add badges section
+    const badges = renderOptional(data.badges, renderBadges);
+    if (badges) sections.push(badges);
 
-    // Add social status section if present
-    if (data.socialStatus && Option.isSome(data.socialStatus)) {
-        sections.push(renderSocialStatus(data.socialStatus.value));
-    }
+    // Add social status section
+    const socialStatus = renderOptional(data.socialStatus, renderSocialStatus);
+    if (socialStatus) sections.push(socialStatus);
 
-    sections.push(
-        renderActivities(data.activities),
-        renderSkills(data.skills),
-        renderFooter(data.footer),
-    );
+    // Add plugins/metrics section
+    const plugins = renderOptional(data.plugins, renderPlugins);
+    if (plugins) sections.push(plugins);
+
+    // Core activities section
+    sections.push(renderActivities(data.activities));
+
+    // Add education section
+    const education = renderOptional(data.education, renderEducation);
+    if (education) sections.push(education);
+
+    // Add skills section
+    sections.push(renderSkills(data.skills));
+
+    // Add social updates section
+    const socialUpdates = renderOptional(data.socialUpdates, renderSocialUpdates);
+    if (socialUpdates) sections.push(socialUpdates);
+
+    // Add news/reading list section
+    const news = renderOptional(data.news, renderNews);
+    if (news) sections.push(news);
+
+    // Add resume links section
+    const resume = renderOptional(data.resume, renderResume);
+    if (resume) sections.push(resume);
+
+    // Add funding section
+    const funding = renderOptional(data.funding, renderFunding);
+    if (funding) sections.push(funding);
+
+    // Add FAQ section
+    const faq = renderOptional(data.faq, renderFAQ);
+    if (faq) sections.push(faq);
+
+    // Footer always last
+    sections.push(renderFooter(data.footer));
 
     return joinSections(...sections);
 };

@@ -1,0 +1,29 @@
+# FAQ Configuration
+# Frequently asked questions with collapsible details/summary
+
+title = "❓ FAQ"
+
+[[items]]
+question = "What is your tech stack?"
+answer = "I primarily work with TypeScript, Rust, and Clojure. For frontend work I use React with Effect-TS for robust error handling. My runtime of choice is Bun for its speed and modern features."
+category = "Technical"
+
+[[items]]
+question = "Are you available for freelance work?"
+answer = "Yes! I'm open to consulting and freelance projects, especially in systems programming, language design, and distributed systems. Reach out via my contact page."
+category = "Work"
+
+[[items]]
+question = "How can I contribute to your projects?"
+answer = "Check out my repositories on GitHub! Most projects have contribution guidelines. I especially welcome PRs for documentation, tests, and accessibility improvements."
+category = "Community"
+
+[[items]]
+question = "What is LOGOS OS?"
+answer = "LOGOS is a distributed virtual operating system I'm developing. It's designed to be a web-native OS with support for decentralized applications, IPFS storage, and a Lisp-based configuration language."
+category = "Projects"
+
+[[items]]
+question = "What does 'MACH' mean in your projects?"
+answer = "MACH is my versioning notation. It represents 'Meta-Architectural Coherence Hierarchy' - a way to track the maturity and stability of a project or component."
+category = "Meta"

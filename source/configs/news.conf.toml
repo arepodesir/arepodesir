@@ -1,0 +1,28 @@
+# News Feed Configuration
+# Curated tech news and articles
+
+title = "📰 READING LIST"
+
+[[items]]
+title = "The Future of Effect-TS"
+source = "Effect Blog"
+link = "https://effect.website/blog"
+icon = "⚡"
+
+[[items]]
+title = "Building Better CLIs with Bun"
+source = "Bun Blog"
+link = "https://bun.sh/blog"
+icon = "🥟"
+
+[[items]]
+title = "Rust for Systems Programming"
+source = "Rust Blog"
+link = "https://blog.rust-lang.org"
+icon = "🦀"
+
+[[items]]
+title = "Functional Programming Patterns"
+source = "FP Complete"
+link = "https://www.fpcomplete.com/blog"
+icon = "λ"
