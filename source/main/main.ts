@@ -19,7 +19,7 @@ export async function main(): Promise<void> {
   ).catch(() => {
     Terminal.error("Generation failed!");
     process.exit(1);
-  });
+  })
 }
 
-await main();
+ main();
