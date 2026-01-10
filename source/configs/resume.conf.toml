@@ -4,9 +4,9 @@
 title = "📄 RESUME"
 
 [[links]]
-label = "Interactive Resume"
+label = "Developer Resume"
 format = "Web"
-url = "https://whoisarepo.space/resume"
+url = "https://whoisarepo.space/resumes"
 icon = "🌐"
 style = "button"
 
