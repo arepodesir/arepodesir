@@ -15,7 +15,7 @@ mach = "1.0001"
 [[activities]]
 name = "LOVE-LANG"
 kind = "Programming Language"
-description = "The List Oriented Virtualized Evaluator"
+description = "The List Oriented Virtualized Evaluator."
 link = "https://github.com/love-metalang/love-lang"
 mach = "1.001"
 

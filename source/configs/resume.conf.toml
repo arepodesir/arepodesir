@@ -1,10 +1,7 @@
-# Resume Links Configuration
-# Stylized links to download or view resume
-
-title = "📄 RESUME"
+title = "📄 RESUMES"
 
 [[links]]
-label = "Developer Resume"
+label = "My Resumes"
 format = "Web"
 url = "https://whoisarepo.space/resumes"
 icon = "🌐"

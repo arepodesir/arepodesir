@@ -3,7 +3,7 @@ export const manifest = () => {
   "banner",
   "header",
   "badges",
-  "social-status",
+
   "activities",
   "education",
   "skills",

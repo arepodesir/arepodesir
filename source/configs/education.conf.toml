@@ -2,16 +2,15 @@
 # Academic background and certifications
 
 [[entries]]
-institution = "Self-Taught"
-degree = "Autodidact"
-field = "Computer Science & Philosophy"
-years = "2015 - Present"
+institution = "Western Governors University"
+degree = "Cybsecurity & Information Assurance (B.S)"
+field = "Information Technology"
+years = "2024-Present"
 description = "Systems programming, language design, distributed systems"
 
 [[entries]]
-institution = "Open Source University"
-degree = "Contributor"
+institution = "The Bloom Institute of Technology"
+degree = "Full Stack Development"
 field = "Software Engineering"
-years = "2018 - Present"
-link = "https://github.com/arepodesir"
-description = "Active contributor to FOSS projects"
+years = "2018 - 2020"
+description = ""

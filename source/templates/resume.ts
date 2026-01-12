@@ -1,16 +1,8 @@
-/**
- * Resume Links Template
- * Renders stylized links to resume in various formats
- * 
- * @module templates/resume
- */
 
 import { md } from "../lib/markdown.js";
 import type { ResumeConfig, ResumeLink } from "../types/types.js";
 
-/**
- * Render a single resume link based on style
- */
+
 const renderLink = (link: ResumeLink): string => {
     const icon = link.icon ?? "📄";
 
@@ -28,9 +20,6 @@ const renderLink = (link: ResumeLink): string => {
     }
 };
 
-/**
- * Render the resume section
- */
 export const renderResume = (config: ResumeConfig): string => {
     if (!config.links || config.links.length === 0) {
         return "";

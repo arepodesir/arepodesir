@@ -1,9 +1,4 @@
-# Badges Configuration
-# Technology stack, repo stats, and profile badges
 
-# ============================================
-# GitHub Stats
-# ============================================
 
 [[badges]]
 src = "https://img.shields.io/github/stars/arepodesir/arepodesir?style=social"
@@ -15,9 +10,6 @@ src = "https://img.shields.io/github/followers/arepodesir?style=social"
 alt = "GitHub Followers"
 link = "https://github.com/arepodesir"
 
-# ============================================
-# Primary Languages
-# ============================================
 
 [[badges]]
 src = "https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
@@ -47,9 +39,6 @@ alt = "Lisp"
 src = "https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"
 alt = "Java"
 
-# ============================================
-# Frameworks & Tools
-# ============================================
 
 [[badges]]
 src = "https://img.shields.io/badge/Effect--TS-000000?style=for-the-badge&logo=effect&logoColor=white"
