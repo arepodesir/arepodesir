@@ -9,24 +9,3 @@ format = "Web"
 url = "https://whoisarepo.space/resumes"
 icon = "🌐"
 style = "button"
-
-[[links]]
-label = "Download PDF"
-format = "PDF"
-url = "https://whoisarepo.space/resume.pdf"
-icon = "📥"
-style = "badge"
-
-[[links]]
-label = "JSON Resume"
-format = "JSON"
-url = "https://whoisarepo.space/resume.json"
-icon = "{ }"
-style = "link"
-
-[[links]]
-label = "LinkedIn Profile"
-format = "LinkedIn"
-url = "https://linkedin.com/in/arepodesir"
-icon = "💼"
-style = "badge"
