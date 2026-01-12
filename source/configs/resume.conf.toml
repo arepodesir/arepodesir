@@ -1,8 +1,24 @@
 title = "📄 RESUMES"
 
 [[links]]
-label = "My Resumes"
+label = "Arepo, Developer"
 format = "Web"
 url = "https://whoisarepo.space/resumes"
 icon = "🌐"
 style = "button"
+
+[[links]]
+label = "Arepo, Designer"
+format = "Web"
+url = "https://whoisarepo.space/resumes"
+icon = "🌐"
+style = "button"
+
+[[links]]
+label = "Arepo, Pianist"
+format = "Web"
+url = "https://whoisarepo.space/resumes"
+icon = "🌐"
+style = "button"
+
+
