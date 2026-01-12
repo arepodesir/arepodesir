@@ -1,40 +1,15 @@
-import { Effect, pipe, Match } from "effect";
-import { loadAllConfigs } from "../utils/config.js";
+import { manifest } from "@/data";
+import { MESSAGES, Terminal } from "@/services";
 import { writeReadme } from "@/services/Writer.js";
-import { Terminal, MESSAGES } from "@/services";
 import { renderReadme } from "@/templates";
-import { WORKING_DIRECTORY } from "../utils/utils.js";
+import { CONFIG_DIR, loadAllConfigs, PROJECT_ROOT } from "@/utils";
+import { Effect, Match, pipe } from "effect";
 
 import type {
-  ConfigNotFoundError,
-  ConfigParseError,
-  WriteError,
-  GenerationResult,
+  AppError,
+  GenerationResult
 } from "@/types";
 
-// =============================================================================
-// Program Constants
-export const PROJECT_ROOT = WORKING_DIRECTORY;
-export const CONFIG_DIR = `${PROJECT_ROOT}/source/configs`;
-
-const ALL_SECTIONS = [
-  "banner",
-  "header",
-  "badges",
-  "social-status",
-  "plugins",
-  "activities",
-  "education",
-  "skills",
-  "social-updates",
-  "news",
-  "resume",
-  "funding",
-  "faq",
-  "footer",
-] as const;
-
-export type AppError = ConfigNotFoundError | ConfigParseError | WriteError;
 
 export const handleError = (error: AppError): string =>
   pipe(
@@ -54,13 +29,10 @@ export const handleError = (error: AppError): string =>
     Match.exhaustive,
   );
 
-
 export const generateReadme: Effect.Effect<GenerationResult, AppError> = pipe(
-  // Step 0: Print pretty ASCII art banner
   Effect.sync(() => Terminal.printArt()),
   Effect.tap(() => Terminal.log("")),
 
-  // Step 1: Load all configs
   Effect.tap(() => Terminal.logStep("Loading configuration files...")),
   Effect.flatMap(() => loadAllConfigs(CONFIG_DIR)),
   Effect.tap((configs) =>
@@ -74,7 +46,6 @@ export const generateReadme: Effect.Effect<GenerationResult, AppError> = pipe(
     }).length} config files`),
   ),
 
-  // Step 2: Render README
   Effect.tap(() => Terminal.logStep("Rendering README...")),
   Effect.map((configs) => ({
     content: renderReadme(configs),
@@ -82,14 +53,13 @@ export const generateReadme: Effect.Effect<GenerationResult, AppError> = pipe(
   })),
   Effect.tap(() => Terminal.logSuccess("README rendered")),
 
-  // Step 3: Write to file
   Effect.tap(() => Terminal.logStep("Writing README.md...")),
   Effect.flatMap(({ content }) =>
     pipe(
       writeReadme(PROJECT_ROOT, content),
       Effect.map(() => ({
         outputPath: `${PROJECT_ROOT}/README.md`,
-        sections: ALL_SECTIONS,
+        sections: manifest(),
         timestamp: new Date(),
       })),
     ),
@@ -98,11 +68,8 @@ export const generateReadme: Effect.Effect<GenerationResult, AppError> = pipe(
     Terminal.logSuccess(`README.md written to ${result.outputPath}`),
   ),
 
-  // Step 4: Show pretty result summary
   Effect.tap((result) => Effect.sync(() => Terminal.result(result))),
 );
 
+export { MESSAGES, renderReadme, Terminal };
 
-
-export { Terminal, MESSAGES };
-export { renderReadme };

@@ -1,4 +1,2 @@
-/**
- * Data Index Barrel Export
- */
 export * from "./program"
+export * from "./manifest"

@@ -41,6 +41,7 @@ export interface ActivityConfig {
     readonly mach: string;
 }
 
+
 export interface SkillsConfig {
     readonly socials: readonly IconConfig[];
     readonly languages: readonly IconConfig[];

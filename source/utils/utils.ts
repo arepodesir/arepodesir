@@ -1,7 +1,4 @@
 
-export const WORKING_DIRECTORY = process.cwd();
-
-
 
 export function defineService(closure: () => any) {
   return closure();
