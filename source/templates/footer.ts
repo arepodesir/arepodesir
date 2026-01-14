@@ -5,7 +5,7 @@ export const renderFooter = (config: FooterConfig): string => {
   const now = new Date().toISOString();
 
   return md`
-<table align="left">
+<table align="center">
 <tr>
 <th align="center"><blockquote>"${config.quote}" - ${config.author}</blockquote></th>
 </tr>

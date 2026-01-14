@@ -1,31 +1,3 @@
-# README Plugins Configuration
-# Free GitHub README plugins and widgets
-
-# GitHub Stats Card - Shows your GitHub statistics
-[[plugins]]
-name = "GitHub Stats"
-type = "stats"
-url = "https://github-readme-stats.vercel.app/api?username=arepodesir&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117"
-alt = "GitHub Stats"
-align = "center"
-
-# GitHub Trophies - Shows your achievements
-[[plugins]]
-name = "GitHub Trophies"
-type = "trophy"
-url = "https://github-profile-trophy.vercel.app/?username=arepodesir&theme=radical&no-frame=true&no-bg=true&margin-w=4&column=7"
-alt = "GitHub Trophies"
-align = "center"
-
-# Contribution Snake - Animated snake eating contributions
-[[plugins]]
-name = "Contribution Snake"
-type = "snake"
-url = "https://raw.githubusercontent.com/arepodesir/arepodesir/output/github-contribution-grid-snake-dark.svg"
-alt = "Snake animation"
-align = "center"
-
-# Random Dev Quote - Inspirational programming quotes
 [[plugins]]
 name = "Dev Quote"
 type = "quote"
@@ -33,18 +5,4 @@ url = "https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical
 alt = "Random Dev Quote"
 align = "center"
 
-# Activity Graph - Shows contribution activity
-[[plugins]]
-name = "Activity Graph"
-type = "activity"
-url = "https://github-readme-activity-graph.vercel.app/graph?username=arepodesir&theme=react-dark&hide_border=true&bg_color=0D1117"
-alt = "Activity Graph"
-align = "center"
 
-# Top Languages - Most used programming languages
-[[plugins]]
-name = "Top Languages"
-type = "stats"
-url = "https://github-readme-stats.vercel.app/api/top-langs/?username=arepodesir&layout=compact&theme=radical&hide_border=true&bg_color=0D1117"
-alt = "Top Languages"
-align = "center"

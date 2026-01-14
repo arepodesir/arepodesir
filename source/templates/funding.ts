@@ -40,8 +40,5 @@ export const renderFunding = (config: FundingConfig): string => {
 ${badgesHtml}
 </p>
 
-| | Platform | Details |
-|:-:|:---------|:--------|
-${platformsList}
 `;
 };
