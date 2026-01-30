@@ -33,6 +33,20 @@ export interface LinkConfig {
     readonly url: string;
 }
 
+export type TemplateConfiguration<T> = {
+    [t: symbol]: T
+}
+
+
+export type TestC = TemplateConfiguration<{
+    r: string 
+}>
+
+
+const test: TestC = { r: 1 as any}
+
+
+
 export interface ActivityConfig {
     readonly name: string;
     readonly kind: string;

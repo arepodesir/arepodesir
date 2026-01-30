@@ -1,7 +1,7 @@
-import { defineTemplate } from "@/utils/utils.js";
-import type { BannerConfig } from "../types/types.js";
+import { defineTemplate } from "@/utils";
+import type { BannerConfig } from "@/types";
 
-export const renderBanner = defineTemplate((config: BannerConfig) => {
+const banner_template = (config: BannerConfig) => {
   return [
     `<img src="${config.imagePath}" height="100%" width="100%"/>`,
     `<h1 align="center">`,
@@ -11,4 +11,6 @@ export const renderBanner = defineTemplate((config: BannerConfig) => {
     `  <p><i>${config.subtitle ?? ""}</i></p>`,
     `</blockquote>`,
   ];
-});
+}
+
+export const banner = defineTemplate(banner_template);

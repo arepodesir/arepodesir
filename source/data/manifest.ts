@@ -1,23 +1,17 @@
-export const manifest = (): Manifest["local" | "cloud"] => {
-  return data.local
+export const manifest = () => {
+    return  [
+  "banner",
+  "header",
+  "badges",
+
+  "activities",
+  "education",
+  "skills",
+  "social-updates",
+  "news",
+  "resume",
+  "funding",
+  "faq",
+  "footer",
+] 
 }
-
-type Manifest = typeof data
-
-const data = {
-  cloud: {} as const,
-  local : [
-    "banner",
-    "header",
-    "badges",
-    "activities",
-    "news",
-    "skills",
-    "social-updates",
-    "resume",
-    "funding",
-    "faq",
-    "footer",
-  ]
-} as const 
-

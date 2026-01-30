@@ -1,28 +1,22 @@
 
-
-export function defineService(closure: () => any) {
-  return closure();
-}
-
-
-export type Templates = string[] 
-
 export function defineTemplate<T extends unknown[]>(
-  closure: (...args: T) => Templates
+  closure: (...args: T) => string[]
 ): T extends [] ? string : (...args: T) => string {
+
+ const NEW_LINE_ESCAPE = "\n" as const  
+
   if (closure.length === 0) {
-    // No arguments expected - execute immediately
     try {
-      return (closure as () => string[])().join("\n") as any;
+      return (closure as () => string[])().join(NEW_LINE_ESCAPE) as any;
     } catch (error) {
       console.error(error);
       return "" as any;
     }
   }
-  // Arguments expected - return a factory function
+  
   return ((...args: T) => {
     try {
-      return closure(...args).join("\n");
+      return closure(...args).join(NEW_LINE_ESCAPE);
     } catch (error) {
       console.error(error);
       return "";

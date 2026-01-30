@@ -6,6 +6,9 @@
  */
 
 import { createHash } from "crypto";
+import { defineTemplate } from "@/utils";
+
+
 
 // =============================================================================
 // Version & Build Information
