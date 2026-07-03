@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "rootDir": "./source",
+    "rootDir": "src",
     "outDir": "./dist",
     "baseUrl": ".",
     "paths": {
       "@/*": [
-        "source/*"
+        "src/*"
       ],
       "@/utils": [
-        "source/utils/index.ts"
+        "src/utils/index.ts"
       ]
     },
     "moduleResolution": "bundler",
