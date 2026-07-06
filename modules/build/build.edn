@@ -1,0 +1,29 @@
+{:metadata {:project "prompt-metalang"
+            :author "AREPO LAURIANNE DESIR"
+            :build-label "MACH 1.01"
+            :description "The PROMPT METALANGUAGE build system."
+            :licenses ["AGPL-3.0"]
+
+            :schema {:routes {:target :string
+                              :sections [:string]}}}
+
+ :data  ["ACKNOLEDGEMENTS" "BADGES" "DEMO" "FAQ" "FEATURES" "FEEDVACK" "FUNDING" "INSTALLATION" "QUICKSTART" "ROADMAP" "TUTORIAL"]
+
+ :defaults {:extension ".md"
+            :out "./"
+            :src-dir "docs"}
+
+ :routes {:architecture {:target "ARCHITECTURE"
+                         :sections ["ARCHITECTURE"]}
+
+          :license {:target "LICENSE"
+                    :sections ["LICENSE"]}
+
+          :index {:target "README"
+                  :sections ["HEADER" "INSTALLATION" "USAGE" "VFS" "SYNTAX" "DIMENSIONS" "ARCHITECTURE" "EXAMPLES" "SKILLS" "CONTRIBUTING"   "SUPPORT" "FOOTER"]}
+
+          :changelog {:target "CHANGELOG"
+                      :sections ["HEADER" "CHANGELOG" "FOOTER"]}
+
+          :contributing {:target "CONTRIBUTING"
+                      :sections ["HEADER" "CONTRIBUTING" "FOOTER"]}}}
