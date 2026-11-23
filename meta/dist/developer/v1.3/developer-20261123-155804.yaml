@@ -10,26 +10,26 @@ projects:
   - DESIGN
 - name: LOVE-LANG
   description: The List-Oriented Virtualized Evaluator - (a Metalanguage)
-  definition: A Metalanguage for Spatiotemporal Trajectories.
+  definition: A Metalanguage for spatiotemporal metaprogramming.
   tags:
   - programming-language
   - developer
   - programmer
   date: March 2022 - Present
-  summary: An interpreted meta-language and Lisp-dialect designed for virtualized evaluation.
+  summary: L.O.V.E is a metalanguage for metaprogramming and semantic compilation schemes.
   url: https://love-metalang.xyz
-- name: KPAX
-  description: The World Peace Programme for kindred minds.
-  definition: An International Political forum
-  date: Jan 2022 - Dec  2025
-  summary: A decentralized social governance platform and forum for political discourse.
-  url: https://kpax.desirfoundation.help
+- name: HOPE
+  description: Help Other People Exist
+  definition: An client-first, international political forum
+  date: Jan 2022 - Dec  2026
+  summary: A decentralized social governance platform and forum for political discourse & telemetry.
+  url: https://hope.whoisarepo.space
   tags:
   - CSR
 - name: DR KAIT WHITCOMB
-  description: A marketing website for an Oviedo Psychiatrist.
+  description: A custom, Astrojs marketing website for an Oviedo Psychiatrist.
   date: March 2023 - Jan 2024
-  summary: A self-hosted marketing solution for a private psychiatric practice in Oviedo, FL.
+  summary: A self-hosted, bespoke, marketing solution for a private psychiatric practice in Oviedo, FL.
   url: https://drkaitwhitcomb.com
   tags:
   - IT
@@ -59,10 +59,10 @@ theme:
     small: 4.59pt
     tiny: 2.83pt
 build:
-  version: v1.02
-  hash: 13666ac6
+  version: v1.3
+  hash: 88f3dc27
   template: resume
-  generated-at: '2026-11-23T14:27:54.159626695-05:00'
+  generated-at: '2026-11-23T15:58:04.092305510-05:00'
   status: generated
 skills:
 - visible: true
@@ -188,7 +188,7 @@ certifications:
   - CSR
   name: Security+
   description: CompTIA Certification
-  date: October 2026
+  date: January 2027
   location: WGU
 - tags:
   - IT
@@ -196,7 +196,7 @@ certifications:
   - CSR
   name: Project+
   description: CompTIA Certification
-  date: September 2026
+  date: May 2027
   location: WGU
 - tags:
   - IT
@@ -204,7 +204,7 @@ certifications:
   - CSR
   name: Network+
   description: CompTIA Certification
-  date: Aug 2026
+  date: Jan 2027
   location: WGU
 education:
 - institution: Western Governors University
@@ -279,7 +279,7 @@ profiles:
   username: arepodesir
   icon: dev.to
   url:
-    href: https://dev.to
+    href: https://dev.to/arepodesir
 - visible: true
   network: Upwork
   username: arepodesir
@@ -300,12 +300,12 @@ contact:
   name:
     first: Arepo
     last: Desir
-  email: whoisarepo@gmail.com
+  email: arepodesir@gmail.com
   phone: 678-310-9727
   pronouns: she/her
   location: Atlanta, GA
   website: https://whoisarepo.space
 metadata:
-  mach: 1.02
+  mach: 1.3
   profession: Developer
   description: "I am a Versatile Software Developer with over 5 years of professional experience building scaleable web applications and software solutions.\n                Proficient in modern JavaScript ecosystems ypeScript, React and functional programming (Clojure), with backend proficiency in Python, Java, \n                & Golang. Currently pursuing a B.S. in Cybersecurity.\n                I am actively looking for any team or project to grow my software abilities and career, leveraging my proven ability to manage projects from\n                concept to deployment."

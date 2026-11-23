@@ -17,6 +17,14 @@
   :summary
   "L.O.V.E is a metalanguage for metaprogramming and semantic compilation schemes.",
   :url "https://love-metalang.xyz"},
+ :hope {:name "HOPE",
+        :description "Help Other People Exist",
+        :definition "An client-first, international political forum",
+        :date "Jan 2022 - Dec  2026",
+        :summary
+        "A decentralized social governance platform and forum for political discourse & telemetry.",
+        :url "https://hope.whoisarepo.space",
+        :tags ["CSR"]} ,
  :kpax
  {:name "KPAX",
   :description "The World Peace Programme for kindred minds.",

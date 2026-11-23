@@ -1,5 +1,5 @@
 {:projects
- [:logos-computer :love-lang :kpax :dr-kait-whitcomb],
+ [:logos-computer :love-lang :hope :dr-kait-whitcomb],
  :theme :theme,
  :skills
  [:programming

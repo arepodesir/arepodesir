@@ -1,3 +1,4 @@
+#let is-html = sys.inputs.at("format", default: "pdf") == "html"
 #let data-path = "/" + sys.inputs.at("data", default: "dist/developer/v1.02/developer.yaml")
 #let data = yaml(data-path)
 

@@ -3,32 +3,44 @@
 #let header(persona, config) = {
   let contact = persona.metadata.metadata
 
-  block(width: 100%)[
-    #set text(font: theme.font-primary, size: theme.name-size, weight: "bold")
-    #contact.name.first   #contact.name.last
-  ]
+  if is-html {
+    html.elem("header")[
+      #html.elem("h1")[#contact.name.first #contact.name.last]
+      #html.elem("p")[#config.metadata.profession]
+      #html.elem("p")[
+        #contact.location |
+        #link("tel:" + contact.phone)[#contact.phone] |
+        #link("mailto:" + contact.email)[#contact.email] |
+        #link(contact.website)[#contact.website]
+      ]
+    ]
+  } else {
+    block(width: 100%)[
+      #set text(font: theme.font-primary, size: theme.name-size, weight: "bold")
+      #contact.name.first   #contact.name.last
+    ]
 
+    block(width: 100%)[
+      #set text(font: theme.font-secondary, size: 9pt)
+      #config.metadata.profession
+    ]
 
-  block(width: 100%)[
-    #set text(font: theme.font-secondary, size: 9pt)
-    #config.metadata.profession
-  ]
+    v(1pt)
 
-  v(1pt)
+    block(width: 100%)[
+      #set text(font: theme.font-secondary, size: 6.5pt)
+      #box[#contact.location]
+      #h(3pt) | #h(3pt)
+      #box[#link("tel:" + contact.phone)[#contact.phone]]
+      #h(3pt) | #h(3pt)
+      #box[#link("mailto:" + contact.email)[#contact.email]]
+      #h(3pt) | #h(3pt)
+      #box[#link(contact.website)[#contact.website]]
+    ]
 
-  block(width: 100%)[
-    #set text(font: theme.font-secondary, size: 6.5pt)
-    #box[#contact.location]
-    #h(3pt) | #h(3pt)
-    #box[#link("tel:" + contact.phone)[#contact.phone]]
-    #h(3pt) | #h(3pt)
-    #box[#link("mailto:" + contact.email)[#contact.email]]
-    #h(3pt) | #h(3pt)
-    #box[#link(contact.website)[#contact.website]]
-  ]
-
-  v(2pt)
-  line(length: 100%, stroke: 0.5pt + theme.text-color)
+    v(2pt)
+    line(length: 100%, stroke: 0.5pt + theme.text-color)
+  }
 }
 
 
@@ -45,14 +57,18 @@
 }
 
 #let section-header(title) = {
-  v(5pt)
-  block(width: 100%)[
-    #set text(font: theme.font-tertiary, size: 6.5pt, weight: "bold")
-    #title
-    #v(-3pt)
-    #line(length: 100%, stroke: 0.4pt + theme.text-color)
-  ]
-  v(2pt)
+  if is-html {
+    html.elem("h2")[#title]
+  } else {
+    v(5pt)
+    block(width: 100%)[
+      #set text(font: theme.font-tertiary, size: 6.5pt, weight: "bold")
+      #title
+      #v(-3pt)
+      #line(length: 100%, stroke: 0.4pt + theme.text-color)
+    ]
+    v(2pt)
+  }
 }
 
 

@@ -5,7 +5,7 @@
             [clojure.string :as str]
             [clojure.walk :as walk]))
 
-(def root-dir "/home/arepo/Documents/SOFTWARE/AREPODESIR/meta")
+(def root-dir "/home/arepo/Documents/SOFTWARE/AREPODESIR/arepodesir/meta")
 (def confs-dir (str root-dir "/confs"))
 (def data-dir (str root-dir "/data"))
 (def dist-dir (str root-dir "/dist"))
@@ -20,6 +20,22 @@
 
 (defn load-edn [path]
   (edn/read-string (slurp path)))
+
+(defn normalize-conf-name
+  "Normalizes a conf argument (e.g. 'developer', 'developer.edn', 'confs/developer.edn') to its base name."
+  [s]
+  (-> (str s)
+      (str/replace #"^.*/" "")
+      (str/replace #"\.edn$" "")))
+
+(defn list-conf-names
+  "Lists all available conf names in confs-dir."
+  []
+  (->> (fs/glob confs-dir "*.edn")
+       (map #(fs/strip-ext (fs/file-name %)))
+       (remove #(= % "variables"))
+       sort
+       vec))
 
 (defn load-data-modules
   "Loads all .edn files from data-dir into a map keyed by filename keyword."

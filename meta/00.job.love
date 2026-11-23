@@ -4,6 +4,15 @@
  @infer#[[:intent :targets :goal :status :date]]]
 
 
+[#job 02 expose:cli:multi-conf
+  [:status ::completed]
+  [:date <::date 23-11-2026>]
+  [:goal <::prompt EXPOSE internal command suite per conf-name to package.json aliases for bun run, assuming .edn and confs/ so multiple confs can be passed (e.g. developer it) for multi-generation.>]
+  [:intent <::prompt JOB to support variadic conf-name arguments across all bb/bun commands and log execution.>]
+  [:targets [[commands [:source <::path /home/arepo/Documents/SOFTWARE/AREPODESIR/arepodesir/meta/build/commands.clj>]]
+            [utils [:source <::path /home/arepo/Documents/SOFTWARE/AREPODESIR/arepodesir/meta/build/utils.clj>]]
+            [package [:source <::path /home/arepo/Documents/SOFTWARE/AREPODESIR/arepodesir/meta/package.json>]]]]]
+
 [#job 01 augment:architecture
   [:status ::completed]
   [:date <::date 23-11-2026>]
@@ -32,6 +41,17 @@
                                                 targets inreferences to the file. ensure no regressions.>]]
     @step:finally[conclude [:action <::prompt CONCLUDE, update this job file metadata and decomposed steps in the same grammar, generate a new instance to test the scripts.>]]
 ]
+
+[#@ result
+ :job 02
+ :status :completed
+ :date "2026-11-23T15:20:08-05:00"
+ :command "bun run resume:all:build developer it"
+ :outputs {:developer {:yaml "/home/arepo/Documents/SOFTWARE/AREPODESIR/arepodesir/meta/dist/developer/v1.3/developer-20261123-152008.yaml"
+                       :pdf "/home/arepo/Documents/SOFTWARE/AREPODESIR/arepodesir/meta/dist/developer/v1.3/developer-20261123-152008.pdf"
+                       :html "/home/arepo/Documents/SOFTWARE/AREPODESIR/arepodesir/meta/dist/developer/v1.3/developer-20261123-152008.html"}}
+ :note "developer succeeded; it failed in typst (projects.typ:9:13 cannot access fields on type string) due to an unresolved project reference in it.edn"
+ :tasks [:yaml:data:build :typst:pdf:compile :typst:img:render :typst:html:export :resume:all:build]]
 
 [#@ result
  :job 01
@@ -78,6 +98,17 @@
     @rule[avoid:oldpractices [:thought <::prompt AVOID assumptive old practices for technologies inovlved via minimal
     reasoning and research to ensure idealized representations of code and template code.>]]
 ]
+
+[#@ result
+ :job 02
+ :status :completed
+ :date "2026-11-23T15:20:08-05:00"
+ :command "bun run resume:all:build developer it"
+ :outputs {:developer {:yaml "/home/arepo/Documents/SOFTWARE/AREPODESIR/arepodesir/meta/dist/developer/v1.3/developer-20261123-152008.yaml"
+                       :pdf "/home/arepo/Documents/SOFTWARE/AREPODESIR/arepodesir/meta/dist/developer/v1.3/developer-20261123-152008.pdf"
+                       :html "/home/arepo/Documents/SOFTWARE/AREPODESIR/arepodesir/meta/dist/developer/v1.3/developer-20261123-152008.html"}}
+ :note "developer succeeded; it failed in typst (projects.typ:9:13 cannot access fields on type string) due to an unresolved project reference in it.edn"
+ :tasks [:yaml:data:build :typst:pdf:compile :typst:img:render :typst:html:export :resume:all:build]]
 
 [#@ result
  :status :completed

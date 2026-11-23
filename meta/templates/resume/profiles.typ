@@ -1,15 +1,21 @@
 #import "templates.typ": *
 
-
-
 #section-header("Profiles")
-#block(width: 100%, breakable: false)[
-  #set text(font: theme.font-secondary, size: 6pt)
-  #grid(
-    columns: (1fr, 1fr, 1fr, 1fr, 1fr),
-    gutter: 6pt,
-    ..profiles.map(p => {
-      box[#profile-icon(p.network) #h(1pt) #box[#p.username]]
-    })
-  )
-]
+#if is-html {
+  html.elem("ul")[
+    #for p in profiles {
+      html.elem("li")[#link(p.url.href)[#p.network: \@#p.username]]
+    }
+  ]
+} else {
+  block(width: 100%, breakable: false)[
+    #set text(font: theme.font-secondary, size: 6pt)
+    #grid(
+      columns: (1fr, 1fr, 1fr, 1fr, 1fr),
+      gutter: 6pt,
+      ..profiles.map(p => {
+        box[#profile-icon(p.network) #h(1pt) #box[#p.username]]
+      })
+    )
+  ]
+}
