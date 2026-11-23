@@ -1,0 +1,36 @@
+{:logos-computer
+ {:name "LOGOS COMPUTER",
+  :description "The Logiontic Growth & Observation System",
+  :definition "An Operating System for Human Life.",
+  :date "Jan 2020 - Dec 2026",
+  :summary
+  "A browser-based distributed computing environment & operating system.",
+  :url "https://joinlogos.club",
+  :tags ["IT" "DESIGN"]},
+ :love-lang
+ {:name "LOVE-LANG",
+  :description
+  "The List-Oriented Virtualized Evaluator - (a Metalanguage)",
+  :definition "A Metalanguage for spatiotemporal metaprogramming.",
+  :tags ["programming-language" "developer" "programmer"],
+  :date "March 2022 - Present",
+  :summary
+  "L.O.V.E is a metalanguage for metaprogramming and semantic compilation schemes.",
+  :url "https://love-metalang.xyz"},
+ :kpax
+ {:name "KPAX",
+  :description "The World Peace Programme for kindred minds.",
+  :definition "An client-first, international political forum",
+  :date "Jan 2022 - Dec  2026",
+  :summary
+  "A decentralized social governance platform and forum for political discourse & telemetry.",
+  :url "https://kpax.desirfoundation.help",
+  :tags ["CSR"]},
+ :dr-kait-whitcomb
+ {:name "DR KAIT WHITCOMB",
+  :description "A custom, Astrojs marketing website for an Oviedo Psychiatrist.",
+  :date "March 2023 - Jan 2024",
+  :summary
+  "A self-hosted, bespoke, marketing solution for a private psychiatric practice in Oviedo, FL.",
+  :url "https://drkaitwhitcomb.com",
+  :tags ["IT" "CSR"]}}

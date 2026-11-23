@@ -1,0 +1,25 @@
+{:a
+ {:tags ["IT" "DEVELOPER" "CSR"],
+  :name "A+",
+  :issuer "CompTIA",
+  :location "DellEMC",
+  :date "Aug 2020",
+  :description "CompTIA Certification"},
+ :security
+ {:tags ["IT" "DEVELOPER" "CSR"],
+  :name "Security+",
+  :description "CompTIA Certification",
+  :date "January 2027",
+  :location "WGU"},
+ :project
+ {:tags ["IT" "DEVELOPER" "CSR"],
+  :name "Project+",
+  :description "CompTIA Certification",
+  :date "May 2027",
+  :location "WGU"},
+ :network
+ {:tags ["IT" "DEVELOPER" "CSR"],
+  :name "Network+",
+  :description "CompTIA Certification",
+  :date "Jan 2027",
+  :location "WGU"}}

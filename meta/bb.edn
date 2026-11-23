@@ -1,0 +1,23 @@
+{:paths ["build"]
+ :tasks
+ {:requires ([commands :as cmd])
+
+  yaml:data:build
+  {:doc "Build YAML data for a conf (default: developer)"
+   :task (apply cmd/yaml:data:build *command-line-args*)}
+
+  typst:pdf:compile
+  {:doc "Compile Typst PDF for a conf (default: developer)"
+   :task (apply cmd/typst:pdf:compile *command-line-args*)}
+
+  typst:img:render
+  {:doc "Render PNG images from compiled Typst for a conf (default: developer)"
+   :task (apply cmd/typst:img:render *command-line-args*)}
+
+  typst:html:export
+  {:doc "Export HTML from compiled Typst for a conf (default: developer)"
+   :task (apply cmd/typst:html:export *command-line-args*)}
+
+  resume:all:build
+  {:doc "Run full pipeline (yaml -> pdf -> img -> html) for a conf or 'all' (default: developer)"
+   :task (apply cmd/resume:all:build *command-line-args*)}}}

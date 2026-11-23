@@ -1,0 +1,31 @@
+{:projects
+ [:logos-computer :love-lang :kpax :updoc :gideon :dr-kait-whitcomb],
+ :theme :theme,
+ :skills
+ [:programming
+  :c2b-systems
+  :administration
+  :sales
+  :communications
+  :support-leadership],
+ :experiences
+ [:desirable-solutions :dellemc :randstad :kindred-hospice],
+ :certifications [:a :security :project :network],
+ :education
+ [:western-governors-university
+  :bloom-institute-of-technology
+  :grayson-highschool
+  :southern-new-hampshire-university
+  :oglethorpe-univeristy
+  :the-gwinnett-school-of-mathematics-science-technology],
+ :profiles [:github :linkedin :instagram :devto :upwork],
+ :tag "CSR",
+ :languages [:spanish :french :haitian-creole :english],
+ :contact :contact,
+ :metadata
+ {:name "CSR",
+  :tag "CSR",
+  :mach 2.001,
+  :profession "Customer Service Representative",
+  :description
+  "With over 15 years of experience in tech and customer care, I really love bridging the gap between complex choices and clear solutions for people.\n                  I’m currently a Cybersecurity student, so I’m looking for ways support myself & apply my background in to help users navigate choices with ease.\n                  I’m an experienced problem-solver who enjoys making a customer’s day a little brighter! (formerly Jeffrey Desir)"}}

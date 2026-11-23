@@ -1,0 +1,4 @@
+{:spanish {:name "Spanish", :level 3},
+ :french {:name "French", :level 2},
+ :haitian-creole {:name "Haitian Creole", :level 3},
+ :english {:name "English", :level 5}}

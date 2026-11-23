@@ -1,0 +1,88 @@
+@Namespace[arepodesir:meta]
+
+[#@ job
+ @infer#[[:intent :targets :goal :status :date]]]
+
+
+[#job 01 augment:architecture
+  [:status ::completed]
+  [:date <::date 23-11-2026>]
+  [:goal <::prompt AUGMENT architecture to distinct data-first edn composition via explicit module+keyreference and other augmentations.>]
+  [:intent <::prompt JOB to add html export into build options for typst and decompose the variables>]
+  [:targets [[confs [:source <::path /home/arepo/Documents/SOFTWARE/AREPODESIR/meta/confs/>]]
+            [templates [:source <::path /home/arepo/Documents/SOFTWARE/AREPODESIR/meta/templates/>]]
+            [data [:source <::path /home/arepo/Documents/SOFTWARE/AREPODESIR/meta/data/>]]
+            [source [:source <::path /home/arepo/Documents/SOFTWARE/AREPODESIR/meta/*>]]
+            [dist [:source <::path /home/arepo/Documents/SOFTWARE/AREPODESIR/meta/dist/>]]
+            [build [:source <::path /home/arepo/Documents/SOFTWARE/AREPODESIR/meta/build/>]]]]]
+@::steps :: [
+    @step[decompose:variables [:action <::prompt DECOMPOSE #[:targets:conf:variables.edn] into #[:targets:data:*].
+                                        Each set of data like projects, experience, skills, etc have their own #[name].edn file
+                                        in flat object and precise structure topology for rich encoding and variants, and invariants.
+                                        Update the template logic to handle this structure in one file (prelude.typ) that the template face
+                                        files import and use freely to colocate the logic.>]]
+    @step[add:htmlexport [:action <::propmt ADD a html export of the generated conf in the same convention as the other outputs using the typst interface.
+                                            ADD #[@permute[s:v:o>]] style script aliases to package.json>]]
+    @step[create:types [:action <::prompt CREATE types.clj that build inherits>]
+    @step[create:commands [:action <::prompt CREATE commands.clj in in build/ that list each command in bb.edn for bb to merely import directly. they shall be 
+                                             defcommands whose macros you shall define in utils.clj in build/ in a clean fashion, deduping hard coded functions
+                                             for reusable code project wide>]]]
+    @step[abstract:template [:action <::prompt ABSTRACT  the template parameter and template code into /resume and add a /base in templates/ that allows for creating new
+                                                templates to run against new config using the clip easily. update the targets herein and the code base to be plural
+                                                targets inreferences to the file. ensure no regressions.>]]
+    @step:finally[conclude [:action <::prompt CONCLUDE, update this job file metadata and decomposed steps in the same grammar, generate a new instance to test the scripts.>]]
+]
+
+[#@ result
+ :job 01
+ :status :completed
+ :date "2026-11-23T14:27:54-05:00"
+ :outputs {:yaml "/home/arepo/Documents/SOFTWARE/AREPODESIR/meta/dist/developer/v1.02/developer-20261123-142754.yaml"
+           :pdf "/home/arepo/Documents/SOFTWARE/AREPODESIR/meta/dist/developer/v1.02/developer-20261123-142754.pdf"
+           :images "/home/arepo/Documents/SOFTWARE/AREPODESIR/meta/dist/developer/v1.02/"
+           :html "/home/arepo/Documents/SOFTWARE/AREPODESIR/meta/dist/developer/v1.02/developer-20261123-142754.html"}
+ :tasks [:yaml:data:build :typst:pdf:compile :typst:img:render :typst:html:export :resume:all:build]]
+
+
+[#job 00 refactor:generator
+ [:intent <::prompt >]
+ [:targets [[confs [:source <::path /home/arepo/Documents/SOFTWARE/AREPODESIR/meta/confs/>]]
+            [template [:source <::path /home/arepo/Documents/SOFTWARE/AREPODESIR/meta/>]]
+            [source [:source <::path /home/arepo/Documents/SOFTWARE/AREPODESIR/meta/*>]]
+            [dist [:source <::path /home/arepo/Documents/SOFTWARE/AREPODESIR/meta/dist/>]]
+            [build [:source <::path /home/arepo/Documents/SOFTWARE/AREPODESIR/meta/build/>]]]]
+ [:goal <::prompt COERCE old Typst pipelline into a revamped Clojure-Babashka first production pipeline for generating resumes
+                    from common data and specfic confs files. The confs system relies on a variables special file (all in edn)
+                    which shall allow for colocation common data and data references. beyond that the edn configs
+                    should represent whats on the template. Ensuring no layout mistakes are created revamp the typst code
+                    to be more idiomatic and map easily to the edn system, our pipeline should generate the form typst
+                    works best with (yaml) then generate typst pdfs and images in versioned folders in dist for each
+                    confs file executed. Creae subject:object:verb (permutive) shortcut scripts for actions in namespaces or 
+                    namespaces of actions, etc. output finally our developer resume as proof of receipt
+                    and log results in this very file as data consistent with the syntax. No mistakes.>]]
+@::steps :: [
+    @step[convert:confs [:action <::prompt CONVERT all .toml >]]
+    @step[colocate:data []]
+    @step[refactor:template[]]
+    @step:finally[conclude[]
+    @step:defer[@backfill]]
+]
+@::rules:always :: [
+    @rule[minimal:waste [:thought <::prompt MINIMIZE wasteful thoughts over assumptions by reasoning as a inverse interprrter/memory allocator merely
+    fulfill topologocal pathways of desire towards testtable goals via recursive refine over this job file
+    according to the pattern till its non linear but cohesive (diamonte style) metaprogram of maximim precresiom
+    of optimal trajectory flow.>]]
+]
+
+@::rules:never :: [
+    @rule[avoid:oldpractices [:thought <::prompt AVOID assumptive old practices for technologies inovlved via minimal
+    reasoning and research to ensure idealized representations of code and template code.>]]
+]
+
+[#@ result
+ :status :completed
+ :date "2026-11-22T22:22:17-05:00"
+ :outputs {:yaml "/home/arepo/Documents/SOFTWARE/AREPODESIR/meta/build/developer/data.yaml"
+           :pdf "/home/arepo/Documents/SOFTWARE/AREPODESIR/meta/dist/developer/v1.001/developer.pdf"
+           :images "/home/arepo/Documents/SOFTWARE/AREPODESIR/meta/dist/developer/v1.001/"}
+ :tasks [:yaml:data:build :typst:pdf:compile :typst:img:render :resume:all:build]]

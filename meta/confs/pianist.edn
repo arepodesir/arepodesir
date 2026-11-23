@@ -1,0 +1,25 @@
+{:projects
+ [:logos-computer :love-lang :kpax :updoc :gideon :dr-kait-whitcomb],
+ :theme :theme,
+ :skills
+ [:programming
+  :c2b-systems
+  :administration
+  :sales
+  :communications
+  :support-leadership],
+ :experiences
+ [:desirable-solutions :dellemc :randstad :kindred-hospice],
+ :certifications [:a :security :project :network],
+ :education
+ [:western-governors-university
+  :bloom-institute-of-technology
+  :grayson-highschool
+  :southern-new-hampshire-university
+  :oglethorpe-univeristy
+  :the-gwinnett-school-of-mathematics-science-technology],
+ :profiles [:github :linkedin :instagram :devto :upwork],
+ :tag "PIANIST",
+ :languages [:spanish :french :haitian-creole :english],
+ :contact :contact,
+ :metadata {:mach 1.0, :profession "pianist", :description ""}}

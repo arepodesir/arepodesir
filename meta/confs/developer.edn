@@ -1,0 +1,32 @@
+{:projects
+ [:logos-computer :love-lang :kpax :dr-kait-whitcomb],
+ :theme :theme,
+ :skills
+ [:programming
+  :c2b-systems
+  :administration
+  :sales
+  :communications
+  :support-leadership],
+ :experiences
+ [:desirable-solutions :dellemc :randstad :kindred-hospice],
+ :certifications [:a :security :project :network],
+ :education
+ [:western-governors-university
+  :bloom-institute-of-technology
+  :grayson-highschool
+  :southern-new-hampshire-university
+  :oglethorpe-univeristy
+  :the-gwinnett-school-of-mathematics-science-technology],
+ :profiles [:github :linkedin :instagram :devto :upwork],
+ :tag "DEVELOPER",
+ :languages [:spanish :french :haitian-creole :english],
+ :contact :contact,
+ :metadata
+ {:mach 1.3,
+  :profession "Developer" ,
+  :description "I am a Versatile Software Developer with over 5 years of professional experience building scaleable web applications and software solutions.
+                Proficient in modern JavaScript ecosystems ypeScript, React and functional programming (Clojure), with backend proficiency in Python, Java, 
+                & Golang. Currently pursuing a B.S. in Cybersecurity.
+                I am actively looking for any team or project to grow my software abilities and career, leveraging my proven ability to manage projects from
+                concept to deployment."}}

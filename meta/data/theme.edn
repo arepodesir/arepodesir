@@ -1,0 +1,20 @@
+{:margin
+ {:top "0.3in", :bottom "0.3in", :left "0.4in", :right "0.4in"},
+ :font
+ {:primary "Libre Baskerville",
+  :secondary "Libre Baskerville",
+  :tertiary "Libre Baskerville",
+  :size "8pt",
+  :heading-size "10pt",
+  :name-size "18pt"},
+ :color
+ {:accent "#f5e6a3",
+  :text "#000000",
+  :link "#ff5a86",
+  :divider "#cccccc"},
+ :spacing
+ {:huge "19.42pt",
+  :large "12pt",
+  :medium "7.42pt",
+  :small "4.59pt",
+  :tiny "2.83pt"}}

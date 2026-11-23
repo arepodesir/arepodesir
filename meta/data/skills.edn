@@ -1,0 +1,73 @@
+{:programming
+ {:visible true,
+  :name "Programming",
+  :level 4,
+  :professions ["CSR"],
+  :keywords
+  ["clojure"
+   "typescript"
+   "html/css"
+   "python"
+   "automation"
+   "security"
+   "technical"]},
+ :c2b-systems
+ {:visible true,
+  :name "C2B Systems",
+  :level 5,
+  :professions ["CSR"],
+  :keywords
+  ["pos" "inventory" "orders" "checkout" "membership" "technical"]},
+ :administration
+ {:visible true,
+  :name "Administration",
+  :level 4,
+  :professions ["CSR"],
+  :keywords
+  ["emails"
+   "logging"
+   "networks"
+   "resolutions"
+   "networks"
+   "intern"
+   "technical"]},
+ :sales
+ {:visible true,
+  :name "Sales",
+  :level 4,
+  :keywords
+  ["product-knowledge"
+   "friendliness"
+   "honest-takes"
+   "soft"
+   "upsell+downsell"
+   "shelf arrangement"
+   "retail-skill"],
+  :professions ["CSR"]},
+ :communications
+ {:visible true,
+  :name "Communications",
+  :level 5,
+  :keywords
+  ["written"
+   "spoken"
+   "rapport"
+   "relationships"
+   "noise-theory"
+   "customer-care"
+   "soft"],
+  :professions ["CSR"]},
+ :support-leadership
+ {:visible true,
+  :name "Support & Leadership",
+  :level 4,
+  :keywords
+  ["problem-solving"
+   "research"
+   "descalation"
+   "morale"
+   "humour"
+   "team-work"
+   "lead"
+   "soft"],
+  :professions ["CSR"]}}

@@ -1,0 +1,30 @@
+{:github
+ {:visible true,
+  :network "Github",
+  :username "arepodesir",
+  :icon "github",
+  :url {:href "https://github.com/arepodesir"}},
+ :linkedin
+ {:visible true,
+  :network "Linkedin",
+  :username "arepodesir",
+  :icon "linkedin",
+  :url {:href "https://linkedin.com/arepodesir"}},
+ :instagram
+ {:visible true,
+  :network "Instagram",
+  :username "arepodesir",
+  :icon "instagram",
+  :url {:href "https://instagram.com/arepodesir"}},
+ :devto
+ {:visible true,
+  :network "Devto",
+  :username "arepodesir",
+  :icon "dev.to",
+  :url {:href "https://dev.to/arepodesir"}},
+ :upwork
+ {:visible true,
+  :network "Upwork",
+  :username "arepodesir",
+  :icon "upwork",
+  :url {:href "https://upwork.com/arepodesir"}}}

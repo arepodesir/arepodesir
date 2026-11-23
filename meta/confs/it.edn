@@ -1,0 +1,31 @@
+{:projects
+ [:logos-computer :love-lang :kpax :updoc :gideon :dr-kait-whitcomb],
+ :theme :theme,
+ :skills
+ [:programming
+  :c2b-systems
+  :administration
+  :sales
+  :communications
+  :support-leadership],
+ :experiences
+ [:desirable-solutions :dellemc :randstad :kindred-hospice],
+ :certifications [:a :security :project :network],
+ :education
+ [:western-governors-university
+  :bloom-institute-of-technology
+  :grayson-highschool
+  :southern-new-hampshire-university
+  :oglethorpe-univeristy
+  :the-gwinnett-school-of-mathematics-science-technology],
+ :profiles [:github :linkedin :instagram :devto :upwork],
+ :tag "IT",
+ :languages [:spanish :french :haitian-creole :english],
+ :contact :contact,
+ :metadata
+ {:mach 1.001,
+  :profession "IT Support Specialist",
+  :github
+  "https://raw.githubusercontent.com/arepodesir/arepodesir/alpha/packages/assets/pdfs/it-2026-01.pdf",
+  :description
+  "I am an experienced IT Supprot Specialist with over 15 years of technology troubleshooting & consultation.\n                 I am proficient in Python, Java, & Golang. Currently pursuing a B.S. in Cybersecurity. I am actively looking for any team or project to grow my software abilities and career,\n                 leveraging my proven ability to manage projects from concept to deployment."}}

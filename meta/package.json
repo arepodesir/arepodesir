@@ -1,0 +1,25 @@
+{
+  "name": "arepodesir.meta",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "bb resume:all:build developer",
+    "build:all": "bb resume:all:build all",
+    "yaml": "bb yaml:data:build developer",
+    "pdf": "bb typst:pdf:compile developer",
+    "img": "bb typst:img:render developer",
+    "html": "bb typst:html:export developer",
+    "yaml:data:build": "bb yaml:data:build",
+    "typst:pdf:compile": "bb typst:pdf:compile",
+    "typst:img:render": "bb typst:img:render",
+    "typst:html:export": "bb typst:html:export",
+    "resume:all:build": "bb resume:all:build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}

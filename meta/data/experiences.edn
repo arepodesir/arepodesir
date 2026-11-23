@@ -1,0 +1,32 @@
+{:desirable-solutions
+ {:company "Desirable Solutions",
+  :position "Lead Developer",
+  :location "Orlando, FL",
+  :date "Jan 2021 - Present",
+  :summary
+  "Architected unique web applications using Clojure, TypeScript, & Web Technologies, leading the SDLC from system, UI & spec design to production deployment for clients & Internal R+D.",
+  :url {:href "https://desirable.solutions"}},
+ :dellemc
+ {:company "DellEMC",
+  :position "Technical Support Specialist",
+  :location "Lake Mary, FL",
+  :date "July 2018 - Feb 2019",
+  :summary
+  "Diagnosed and resolved complex consumer, public, & business sector devices, configurations, and repairs. leveraged deep hardware knowledge daily to provide custom solutions for global clients.",
+  :url {:href "https://dellemc.com"}},
+ :randstad
+ {:company "Randstad",
+  :position "Client Accounts Specialist",
+  :location "Orlando, FL",
+  :date "Nov 2017 - July 2018",
+  :summary
+  "Answered client's employees questions about Health Care Spending Accounts (HCSA) providing account guidance, managerial resolutions, and answers on specific account details at high accuracy daily.",
+  :url {:href "https://randstad.com"}},
+ :kindred-hospice
+ {:company "Kindred Hospice",
+  :position "Administrative Assistant",
+  :location "Atlanta, GA",
+  :date "June 2016 - Aug 2017",
+  :summary
+  "Assisted as an intern with administrative tasks, and handled supply orders for the office and learned valuable Health Informatics facts in hospice care. Also took part in patient visitation & child bereavement counseling.",
+  :url {:href "https://www.gentivahsp.com/"}}}
