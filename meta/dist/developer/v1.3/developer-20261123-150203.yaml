@@ -1,0 +1,311 @@
+projects:
+- name: LOGOS COMPUTER
+  description: The Logiontic Growth & Observation System
+  definition: An Operating System for Human Life.
+  date: Jan 2020 - Dec 2026
+  summary: A browser-based distributed computing environment & operating system.
+  url: https://joinlogos.club
+  tags:
+  - IT
+  - DESIGN
+- name: LOVE-LANG
+  description: The List-Oriented Virtualized Evaluator - (a Metalanguage)
+  definition: A Metalanguage for spatiotemporal metaprogramming.
+  tags:
+  - programming-language
+  - developer
+  - programmer
+  date: March 2022 - Present
+  summary: L.O.V.E is a metalanguage for metaprogramming and semantic compilation schemes.
+  url: https://love-metalang.xyz
+- name: KPAX
+  description: The World Peace Programme for kindred minds.
+  definition: An client-first, international political forum
+  date: Jan 2022 - Dec  2026
+  summary: A decentralized social governance platform and forum for political discourse & telemetry.
+  url: https://kpax.desirfoundation.help
+  tags:
+  - CSR
+- name: DR KAIT WHITCOMB
+  description: A custom, Astrojs marketing website for an Oviedo Psychiatrist.
+  date: March 2023 - Jan 2024
+  summary: A self-hosted, bespoke, marketing solution for a private psychiatric practice in Oviedo, FL.
+  url: https://drkaitwhitcomb.com
+  tags:
+  - IT
+  - CSR
+theme:
+  margin:
+    top: 0.3in
+    bottom: 0.3in
+    left: 0.4in
+    right: 0.4in
+  font:
+    primary: Libre Baskerville
+    secondary: Libre Baskerville
+    tertiary: Libre Baskerville
+    size: 8pt
+    heading-size: 10pt
+    name-size: 18pt
+  color:
+    accent: '#f5e6a3'
+    text: '#000000'
+    link: '#ff5a86'
+    divider: '#cccccc'
+  spacing:
+    huge: 19.42pt
+    large: 12pt
+    medium: 7.42pt
+    small: 4.59pt
+    tiny: 2.83pt
+build:
+  version: v1.3
+  hash: e5642b7c
+  template: resume
+  generated-at: '2026-11-23T15:02:03.231208279-05:00'
+  status: generated
+skills:
+- visible: true
+  name: Programming
+  level: 4
+  professions:
+  - CSR
+  keywords:
+  - clojure
+  - typescript
+  - html/css
+  - python
+  - automation
+  - security
+  - technical
+- visible: true
+  name: C2B Systems
+  level: 5
+  professions:
+  - CSR
+  keywords:
+  - pos
+  - inventory
+  - orders
+  - checkout
+  - membership
+  - technical
+- visible: true
+  name: Administration
+  level: 4
+  professions:
+  - CSR
+  keywords:
+  - emails
+  - logging
+  - networks
+  - resolutions
+  - networks
+  - intern
+  - technical
+- visible: true
+  name: Sales
+  level: 4
+  keywords:
+  - product-knowledge
+  - friendliness
+  - honest-takes
+  - soft
+  - upsell+downsell
+  - shelf arrangement
+  - retail-skill
+  professions:
+  - CSR
+- visible: true
+  name: Communications
+  level: 5
+  keywords:
+  - written
+  - spoken
+  - rapport
+  - relationships
+  - noise-theory
+  - customer-care
+  - soft
+  professions:
+  - CSR
+- visible: true
+  name: Support & Leadership
+  level: 4
+  keywords:
+  - problem-solving
+  - research
+  - descalation
+  - morale
+  - humour
+  - team-work
+  - lead
+  - soft
+  professions:
+  - CSR
+experiences:
+- company: Desirable Solutions
+  position: Lead Developer
+  location: Orlando, FL
+  date: Jan 2021 - Present
+  summary: Architected unique web applications using Clojure, TypeScript, & Web Technologies, leading the SDLC from system, UI & spec design to production deployment for clients & Internal R+D.
+  url:
+    href: https://desirable.solutions
+- company: DellEMC
+  position: Technical Support Specialist
+  location: Lake Mary, FL
+  date: July 2018 - Feb 2019
+  summary: Diagnosed and resolved complex consumer, public, & business sector devices, configurations, and repairs. leveraged deep hardware knowledge daily to provide custom solutions for global clients.
+  url:
+    href: https://dellemc.com
+- company: Randstad
+  position: Client Accounts Specialist
+  location: Orlando, FL
+  date: Nov 2017 - July 2018
+  summary: Answered client's employees questions about Health Care Spending Accounts (HCSA) providing account guidance, managerial resolutions, and answers on specific account details at high accuracy daily.
+  url:
+    href: https://randstad.com
+- company: Kindred Hospice
+  position: Administrative Assistant
+  location: Atlanta, GA
+  date: June 2016 - Aug 2017
+  summary: Assisted as an intern with administrative tasks, and handled supply orders for the office and learned valuable Health Informatics facts in hospice care. Also took part in patient visitation & child bereavement counseling.
+  url:
+    href: https://www.gentivahsp.com/
+certifications:
+- tags:
+  - IT
+  - DEVELOPER
+  - CSR
+  name: A+
+  issuer: CompTIA
+  location: DellEMC
+  date: Aug 2020
+  description: CompTIA Certification
+- tags:
+  - IT
+  - DEVELOPER
+  - CSR
+  name: Security+
+  description: CompTIA Certification
+  date: January 2027
+  location: WGU
+- tags:
+  - IT
+  - DEVELOPER
+  - CSR
+  name: Project+
+  description: CompTIA Certification
+  date: May 2027
+  location: WGU
+- tags:
+  - IT
+  - DEVELOPER
+  - CSR
+  name: Network+
+  description: CompTIA Certification
+  date: Jan 2027
+  location: WGU
+education:
+- institution: Western Governors University
+  tags:
+  - DEVELOPER
+  studyType: Bachelor of Science
+  area: Cyber-security & Information Assurance
+  score: In-progress
+  date: Jan 2024 - Present
+  summary: ''
+- institution: Bloom Institute of Technology
+  studyType: Vocational
+  area: Web Development
+  tags:
+  - DEVELOPER
+  score: Graduated
+  date: Jan 2020 - July 2021
+  summary: ''
+- institution: Grayson Highschool
+  studyType: Vocational
+  area: Web Development
+  score: Graduated
+  date: Jan 2020 - July 2021
+  summary: ''
+  tags:
+  - ''
+- institution: Southern New Hampshire University
+  studyType: Batchelor of Arts
+  area: Applied Mathematics
+  score: Graduated
+  date: Jan 2020 - July 2021
+  summary: ''
+  tags:
+  - ''
+- institution: Oglethorpe Univeristy
+  studyType: Vocational
+  area: Web Development
+  score: Graduated
+  date: Jan 2020 - July 2021
+  summary: ''
+  tags:
+  - ''
+- institution: The Gwinnett School of Mathematics, Science & Technology
+  studyType: STEM
+  area: Web Development
+  score: Graduated
+  date: Jan 2020 - July 2021
+  summary: ''
+  tags:
+  - ''
+profiles:
+- visible: true
+  network: Github
+  username: arepodesir
+  icon: github
+  url:
+    href: https://github.com/arepodesir
+- visible: true
+  network: Linkedin
+  username: arepodesir
+  icon: linkedin
+  url:
+    href: https://linkedin.com/arepodesir
+- visible: true
+  network: Instagram
+  username: arepodesir
+  icon: instagram
+  url:
+    href: https://instagram.com/arepodesir
+- visible: true
+  network: Devto
+  username: arepodesir
+  icon: dev.to
+  url:
+    href: https://dev.to/arepodesir
+- visible: true
+  network: Upwork
+  username: arepodesir
+  icon: upwork
+  url:
+    href: https://upwork.com/arepodesir
+tag: DEVELOPER
+languages:
+- name: Spanish
+  level: 3
+- name: French
+  level: 2
+- name: Haitian Creole
+  level: 3
+- name: English
+  level: 5
+contact:
+  name:
+    first: Arepo
+    last: Desir
+  email: arepodesir@gmail.com
+  phone: 678-310-9727
+  pronouns: she/her
+  location: Atlanta, GA
+  website: https://whoisarepo.space
+metadata:
+  mach: 1.3
+  profession: Developer
+  description: "I am a Versatile Software Developer with over 5 years of professional experience building scaleable web applications and software solutions.\n                Proficient in modern JavaScript ecosystems ypeScript, React and functional programming (Clojure), with backend proficiency in Python, Java, \n                & Golang. Currently pursuing a B.S. in Cybersecurity.\n                I am actively looking for any team or project to grow my software abilities and career, leveraging my proven ability to manage projects from\n                concept to deployment."
