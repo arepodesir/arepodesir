@@ -1,4 +1,4 @@
-import { md } from "src/lib/markdown.js";
+import { md } from "source/lib/markdown.js";
 export const security = () => md`
     # Security Policy
 

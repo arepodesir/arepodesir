@@ -1,5 +1,5 @@
-import { defineTemplate } from "src/utils";
-import { h2, p } from "src/lib/markdown";
+import { defineTemplate } from "source/utils";
+import { h2, p } from "source/lib/markdown";
 
 export const support = defineTemplate(() => {
   return [

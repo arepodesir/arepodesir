@@ -5,9 +5,9 @@
  * @module templates/skills
  */
 
-import { md, htmlImg } from "src/lib/markdown";
-import type { SkillsConfig, IconConfig } from "src/types";
-import { defineTemplate } from "src/utils";
+import { md, htmlImg } from "source/lib/markdown";
+import type { SkillsConfig, IconConfig } from "source/types";
+import { defineTemplate } from "source/utils";
 
 // =============================================================================
 // Icon Table Renderer

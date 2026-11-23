@@ -1,6 +1,6 @@
-import * as prelude from "src/main";
-import { compose, Functional } from "src/lib";
-import { Terminal } from "src/services";
+import * as prelude from "source/main";
+import { compose, Functional } from "source/lib";
+import { Terminal } from "source/services";
 
 export async function main(): Promise<void> {
   const { generateReadme, handleError } = prelude;

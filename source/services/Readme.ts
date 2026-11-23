@@ -5,8 +5,8 @@
  * @module services/Readme
  */
 
-import { defineService } from "src/utils";
-import { joinSections } from "src/lib";
+import { defineService } from "source/utils";
+import { joinSections } from "source/lib";
 import { Effect } from "effect";
 
 export const Readme = defineService(() => {

@@ -6,7 +6,7 @@
  */
 
 import { createHash } from "crypto";
-import { defineTemplate } from "src/utils";
+import { defineTemplate } from "source/utils";
 
 
 

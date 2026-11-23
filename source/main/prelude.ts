@@ -1,14 +1,14 @@
-import { manifest } from "src/data";
-import { MESSAGES, Terminal } from "src/services";
-import { writeReadme } from "src/services/Writer.js";
-import { renderReadme } from "src/templates";
-import { CONFIG_DIR, loadAllConfigs, PROJECT_ROOT } from "src/utils";
+import { manifest } from "source/data";
+import { MESSAGES, Terminal } from "source/services";
+import { writeReadme } from "source/services/Writer.js";
+import { renderReadme } from "source/templates";
+import { CONFIG_DIR, loadAllConfigs, PROJECT_ROOT } from "source/utils";
 import { Effect, Match, pipe } from "effect";
 
 import type {
   AppError,
   GenerationResult
-} from "src/types";
+} from "source/types";
 
 
 export const handleError = (error: AppError): string =>

@@ -1,6 +1,6 @@
-import type { ActivityConfig } from "src/types/types.js";
-import { defineTemplate } from "src/utils/utils.js";
-import { md, table } from "src/lib"
+import type { ActivityConfig } from "source/types/types.js";
+import { defineTemplate } from "source/utils/utils.js";
+import { md, table } from "source/lib"
 
 export const activities = defineTemplate((activities: readonly ActivityConfig[]) => {
   const tableContent = table(

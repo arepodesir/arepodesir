@@ -1,5 +1,5 @@
-import { md } from "src/lib/markdown";
-import type { FooterConfig } from "src/types";
+import { md } from "source/lib/markdown";
+import type { FooterConfig } from "source/types";
 
 export const renderFooter = (config: FooterConfig): string => {
   const now = new Date().toISOString();

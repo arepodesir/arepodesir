@@ -1,5 +1,5 @@
-import { defineTemplate } from "src/utils";
-import type { BannerConfig } from "src/types";
+import { defineTemplate } from "source/utils";
+import type { BannerConfig } from "source/types";
 
 const banner_template = (config: BannerConfig) => {
   return [

@@ -1,5 +1,5 @@
-import { defineTemplate } from "src/utils/utils";
-import { h2 } from "src/lib/markdown"
+import { defineTemplate } from "source/utils/utils";
+import { md as h2 } from "source/lib"
 
 
 export const socialMedia = defineTemplate(() => {
