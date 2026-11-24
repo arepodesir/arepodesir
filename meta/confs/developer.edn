@@ -4,9 +4,7 @@
  :skills
  [:programming
   :c2b-systems
-  :administration
-  :sales
-  :communications
+  :administration 
   :support-leadership],
  :experiences
  [:desirable-solutions :dellemc :randstad :kindred-hospice],
@@ -23,10 +21,6 @@
  :languages [:spanish :french :haitian-creole :english],
  :contact :contact,
  :metadata
- {:mach 1.5,
+ {:mach 1.6,
   :profession "Developer" ,
-  :description "I am a Versatile Software Developer with over 5 years of professional experience building scaleable web applications and software solutions.
-                Proficient in modern JavaScript ecosystems ypeScript, React and functional programming (Clojure), with backend proficiency in Python, Java, 
-                & Golang. Currently pursuing a B.S. in Cybersecurity.
-                I am actively looking for any team or project to grow my software abilities and career, leveraging my proven ability to manage projects from
-                concept to deployment."}}
+  :description "Hello, world! I’m a versatile software developer with over 10 years of experience building web applications and designing programs. I can confidently provide expertise in front-end application design, back-end architecture, and web mastering. I’m proficient in modern JavaScript ecosystems—TypeScript and React—and functional programming (Clojure), with back-end proficiency in Python, Java, and Golang. I also have a proven ability to manage projects from concept to deployment. As I pursue my Bachelor’s in Information Assurance & Cybersecurity, I want to work with any team or project that helps me support myself, grow my software abilities and career, and contribute where I can."}}

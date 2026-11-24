@@ -1,33 +1,31 @@
 projects:
 - name: LOGOS COMPUTER
   description: The Logiontic Growth & Observation System
-  definition: An Operating System for Human Life.
+  summary: An Operating System for Human Life.
   date: Jan 2020 - Dec 2026
-  summary: A browser-based distributed computing environment & operating system.
   url: https://joinlogos.club
   tags:
   - IT
   - DESIGN
 - name: LOVE-LANG
-  description: The List-Oriented Virtualized Evaluator - (a Metalanguage)
-  definition: A Metalanguage for spatiotemporal metaprogramming.
+  description: The List-Oriented Virtualized Evaluator
+  summary: A Metalanguage for spatiotemporal metaprogramming.
   tags:
   - programming-language
   - developer
   - programmer
   date: March 2022 - Present
-  summary: L.O.V.E is a metalanguage for metaprogramming and semantic compilation schemes.
   url: https://love-metalang.xyz
 - name: HOPE
   description: Help Other People Exist
   definition: An client-first, international political forum
   date: Jan 2022 - Dec  2026
-  summary: A decentralized social governance platform and forum for political discourse & telemetry.
+  summary: A platform for humans to support other humans.
   url: https://hope.whoisarepo.space
   tags:
   - CSR
 - name: DR KAIT WHITCOMB
-  description: A custom, Astrojs marketing website for an Oviedo Psychiatrist.
+  description: A custom, astro.js marketing website for an Oviedo Psychiatrist.
   date: March 2023 - Jan 2024
   summary: A self-hosted, bespoke, marketing solution for a private psychiatric practice in Oviedo, FL.
   url: https://drkaitwhitcomb.com
@@ -59,10 +57,10 @@ theme:
     small: 4.59pt
     tiny: 2.83pt
 build:
-  version: v1.5
-  hash: 61a6089c
+  version: v1.6
+  hash: b85dea94
   template: resume
-  generated-at: '2026-11-24T00:34:10.698791106-05:00'
+  generated-at: '2026-11-24T00:56:33.633337927-05:00'
   status: generated
 skills:
 - visible: true
@@ -103,32 +101,6 @@ skills:
   - networks
   - intern
   - technical
-- visible: true
-  name: Sales
-  level: 4
-  keywords:
-  - product-knowledge
-  - friendliness
-  - honest-takes
-  - soft
-  - upsell+downsell
-  - shelf arrangement
-  - retail-skill
-  professions:
-  - CSR
-- visible: true
-  name: Communications
-  level: 5
-  keywords:
-  - written
-  - spoken
-  - rapport
-  - relationships
-  - noise-theory
-  - customer-care
-  - soft
-  professions:
-  - CSR
 - visible: true
   name: Support & Leadership
   level: 4
@@ -211,7 +183,7 @@ education:
   tags:
   - DEVELOPER
   studyType: Bachelor of Science
-  area: Cyber-security & Information Assurance
+  area: Cybersecurity & Information Assurance
   score: In-progress
   date: Jan 2024 - Present
   summary: ''
@@ -306,6 +278,6 @@ contact:
   location: Atlanta, GA
   website: https://whoisarepo.space
 metadata:
-  mach: 1.5
+  mach: 1.6
   profession: Developer
-  description: "I am a Versatile Software Developer with over 5 years of professional experience building scaleable web applications and software solutions.\n                Proficient in modern JavaScript ecosystems ypeScript, React and functional programming (Clojure), with backend proficiency in Python, Java, \n                & Golang. Currently pursuing a B.S. in Cybersecurity.\n                I am actively looking for any team or project to grow my software abilities and career, leveraging my proven ability to manage projects from\n                concept to deployment."
+  description: Hello, world! I’m a versatile software developer with over 10 years of experience building web applications and designing programs. I can confidently provide expertise in front-end application design, back-end architecture, and web mastering. I’m proficient in modern JavaScript ecosystems—TypeScript and React—and functional programming (Clojure), with back-end proficiency in Python, Java, and Golang. I also have a proven ability to manage projects from concept to deployment. As I pursue my Bachelor’s in Information Assurance & Cybersecurity, I want to work with any team or project that helps me support myself, grow my software abilities and career, and contribute where I can.
