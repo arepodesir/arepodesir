@@ -23,7 +23,7 @@
  :languages [:spanish :french :haitian-creole :english],
  :contact :contact,
  :metadata
- {:mach 1.3,
+ {:mach 1.5,
   :profession "Developer" ,
   :description "I am a Versatile Software Developer with over 5 years of professional experience building scaleable web applications and software solutions.
                 Proficient in modern JavaScript ecosystems ypeScript, React and functional programming (Clojure), with backend proficiency in Python, Java, 
