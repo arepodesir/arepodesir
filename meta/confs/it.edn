@@ -1,5 +1,5 @@
 {:projects
- [:logos-computer :love-lang :kpax :updoc :gideon :dr-kait-whitcomb],
+ [:logos-computer :love-lang :dr-kait-whitcomb],
  :theme :theme,
  :skills
  [:programming
@@ -23,9 +23,6 @@
  :languages [:spanish :french :haitian-creole :english],
  :contact :contact,
  :metadata
- {:mach 1.001,
+ {:mach 1.1,
   :profession "IT Support Specialist",
-  :github
-  "https://raw.githubusercontent.com/arepodesir/arepodesir/alpha/packages/assets/pdfs/it-2026-01.pdf",
-  :description
-  "I am an experienced IT Supprot Specialist with over 15 years of technology troubleshooting & consultation.\n                 I am proficient in Python, Java, & Golang. Currently pursuing a B.S. in Cybersecurity. I am actively looking for any team or project to grow my software abilities and career,\n                 leveraging my proven ability to manage projects from concept to deployment."}}
+  :description "Hello, world! I’m a versatile IT support professional with over 10 years of experience troubleshooting Windows/Linux/macOS systems and providing software solutions. CompTIA A+ certified through Dell and actively pursuing additional CompTIA certifications, I bring structured troubleshooting, root-cause analysis, and resolution ownership to every incident. I also have a developer background in JavaScript/TypeScript, React, Python, Java, and Go, plus proven project management from concept to deployment. As I pursue my Bachelor’s in Information Assurance & Cybersecurity, I want to contribute my problem-solving skills to a company that values root-cause resolution and continuous IT improvement."}}
