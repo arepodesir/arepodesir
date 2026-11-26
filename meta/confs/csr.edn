@@ -1,11 +1,9 @@
 {:projects
- [:logos-computer :love-lang :kpax :updoc :gideon :dr-kait-whitcomb],
+ [:logos-computer :love-lang :hope :dr-kait-whitcomb],
  :theme :theme,
  :skills
- [:programming
-  :c2b-systems
+ [:c2b-systems
   :administration
-  :sales
   :communications
   :support-leadership],
  :experiences
@@ -25,7 +23,6 @@
  :metadata
  {:name "CSR",
   :tag "CSR",
-  :mach 2.001,
+  :mach 1.2,
   :profession "Customer Service Representative",
-  :description
-  "With over 15 years of experience in tech and customer care, I really love bridging the gap between complex choices and clear solutions for people.\n                  I’m currently a Cybersecurity student, so I’m looking for ways support myself & apply my background in to help users navigate choices with ease.\n                  I’m an experienced problem-solver who enjoys making a customer’s day a little brighter! (formerly Jeffrey Desir)"}}
+  :description "With over 15 years of experience in tech and customer care, I love bridging the gap between complex choices and clear solutions for people. I’m currently a Cybersecurity student looking for ways to support myself and apply my background to help users navigate choices with ease. I’m an experienced problem-solver who answers company and product questions accurately, de-escalates frustrated customers with calm empathy, and collaborates with teammates to keep service consistent—while making a customer’s day a little brighter!"}}
